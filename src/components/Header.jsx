@@ -10,11 +10,11 @@ const Header = () => {
         <section className="container-header">
           <header id="header">
             <div className="logo-container">
-              <a href="index.html">
+              <Link to={'/home'}>
                 <img src={logo} alt="Formula E Logo" id="logo" />
                 <span id="formula">Fórmula </span>
                 <span id="e">E</span>
-              </a>
+              </Link>
             </div>
             <nav className="navbar">
               <div className="mobile-menu">
