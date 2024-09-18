@@ -1,10 +1,11 @@
 import logo from "../assets/img/logo/logo.jpg";
 import { HeaderStyle } from "../css/HeaderStyle";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   return (
 
-    <HeaderStyle>
+    <HeaderStyle isHome = {location.pathname === '/' || location.pathname === '/home'}>
         <section className="container-header">
           <header id="header">
             <div className="logo-container">
