@@ -39,10 +39,12 @@ export const HeaderStyle = styled.section`
     justify-content: space-between;
     align-items: center;
     ${ props => props.isHome 
-    ? `
+    ?
+    `
     background-color: rgba(217, 217, 217, 0.2);
     `
-    : `
+    : 
+    `
     background: none;
     `};
     height: 80px;
