@@ -1,6 +1,7 @@
 import logo from "../assets/img/logo/logo.jpg";
 import { HeaderStyle } from "../css/HeaderStyle";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -23,28 +24,28 @@ const Header = () => {
               </div>
               <ul className="nav-list">
                 <li className="navlink">
-                  <a href="regras.html">Regras</a>
+                  <Link to={'/regras'}>Regras</Link>
                 </li>
                 <li className="navlink">
-                  <a href="calendario.html">Calendário</a>
+                  <Link to={'/calendario'}>Calendario</Link>
                 </li>
                 <li className="navlink">
-                  <a href="pilotos.html">Pilotos</a>
+                  <Link to={'/pilotos'}>Pilotos</Link>
                 </li>
                 <li className="navlink">
-                  <a href="classificacao.html">Classificação</a>
+                  <Link to={'/classificacao'}>Classificação</Link>
                 </li>
                 <li className="navlink">
-                  <a href="equipes.html">Equipes</a>
+                  <Link to={'/equipes'}>Equipes</Link>
                 </li>
                 <li className="navlink">
-                  <a href="noticias.html">Notícias</a>
+                  <Link to={'/noticias'}>Noticias</Link>
                 </li>
                 <li className="navlink">
-                  <a href="jogos.html">Jogo</a>
+                  <Link to={'/jogo'}>Jogo</Link>
                 </li>
                 <li className="navlink" id="login">
-                  <a href="login.html">Login</a>
+                  <Link to={'/login'}>Login</Link>
                 </li>
               </ul>
             </nav>
