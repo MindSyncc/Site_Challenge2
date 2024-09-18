@@ -3,10 +3,16 @@ import { HeaderStyle } from "../css/HeaderStyle";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
+
 const Header = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/' || location.pathname === '/home';  
+
+
   return (
 
-    <HeaderStyle isHome = {location.pathname === '/' || location.pathname === '/home'}>
+    <HeaderStyle isHome = {isHome}>
         <section className="container-header">
           <header id="header">
             <div className="logo-container">

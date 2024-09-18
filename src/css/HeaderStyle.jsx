@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import car from "../assets/img/home/carrousel/car.jpg";
 
+
+
 export const HeaderStyle = styled.section`
   .container-header {
     ${ props => props.isHome 
