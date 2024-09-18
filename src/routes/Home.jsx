@@ -1,15 +1,15 @@
+import { HomeStyle } from "../css/HomeStyle";
 import pilotos from "../assets/img/home/secao/pilotos.jpg";
 
 const Home = () => {
   return (
-    <>
+    <HomeStyle>
       <section className="section-apresentacao">
         <h1 className="header-apresentacao">Nossos Diferenciais</h1>
 
         <div className="horizontal-line"></div>
 
         <section className="diferenciais">
-
           <div className="circulo ativo" id="circulo-informacao">
             <h3>Informações</h3>
           </div>
@@ -37,8 +37,8 @@ const Home = () => {
           <div
             className="texto"
             id="texto-experiencia"
-            style={{ display: "none" }}>
-
+            style={{ display: "none" }}
+          >
             <h2>
               Aprofunde-se na experiência da Fórmula E com nossas análises
               detalhadas de cada corredor.
@@ -54,8 +54,8 @@ const Home = () => {
           <div
             className="texto"
             id="texto-recompensas"
-            style={{ display: "none" }}>
-
+            style={{ display: "none" }}
+          >
             <h2>
               Participe da emoção das corridas da Fórmula E com a chance de
               ganhar prêmios emocionantes.
@@ -67,9 +67,7 @@ const Home = () => {
               modalidade mais eletrizante do automobilismo.
             </p>
           </div>
-
         </section>
-
       </section>
 
       {/*Seção das regras*/}
@@ -100,7 +98,6 @@ const Home = () => {
             <button type="button">Regras e Regulamentos</button>
           </a>
         </div>
-
       </section>
 
       <h1 className="header-apresentacao">Próximas Corridas</h1>
@@ -108,7 +105,6 @@ const Home = () => {
 
       <section>
         <div className="container-nextrace">
-
           <div className="card" id="card1">
             <div className="img">
               <span>Fórmula E</span>
@@ -200,13 +196,11 @@ const Home = () => {
               <span>Rodada 5</span>
             </div>
           </div>
-
         </div>
       </section>
 
       {/*Seção dos pilotos*/}
       <section className="secao pilotos">
-
         <div className="secao-img">
           <img src={pilotos} alt="Pilotos" />
         </div>
@@ -226,7 +220,6 @@ const Home = () => {
             <button type="button">Pilotos</button>
           </a>
         </div>
-
       </section>
 
       {/*Seção de Classificação*/}
@@ -234,9 +227,7 @@ const Home = () => {
       <h1 className="header-apresentacao">Classificação 23/24</h1>
       <div className="horizontal-line"></div>
       <section className="secao classificacao">
-
         <table>
-
           <thead>
             <tr className="tabela">
               <th title="Posição">Posição</th>
@@ -249,7 +240,6 @@ const Home = () => {
           </thead>
 
           <tbody>
-
             <tr>
               <td title="Posição">1</td>
               <td title="Pilotos">Cassidy</td>
@@ -315,9 +305,7 @@ const Home = () => {
               <td title="Desempenho">0</td>
               <td title="Pontuação">131</td>
             </tr>
-
           </tbody>
-
         </table>
 
         <div className="container-botao">
@@ -327,9 +315,91 @@ const Home = () => {
             </button>
           </a>
         </div>
-        
       </section>
-    </>
+
+      {/*Seção das equipes*/}
+
+      <section class="secao equipes">
+        <div class="secao-img">
+          <img src="src/assets/img/home/secao/equipes.jpg" alt="Equipes" />
+        </div>
+
+        <div class="secao-texto">
+          <h1>Equipes</h1>
+          <p>
+            As equipes da Fórmula E são compostas por fabricantes renomados e
+            times independentes, todos focados na inovação e sustentabilidade.
+            Marcas como Audi, BMW, Mercedes-Benz e Nissan trazem sua expertise
+            tecnológica para desenvolver veículos elétricos de alta performance.
+            Cada equipe trabalha intensamente no desenvolvimento de baterias,
+            motores e software de gerenciamento de energia, tornando a Fórmula E
+            um campo de prova para futuras tecnologias automotivas. A
+            diversidade das equipes e suas abordagens criativas impulsionam a
+            evolução contínua da categoria, promovendo um futuro mais
+            sustentável no automobilismo.
+          </p>
+          <a href="equipes.html">
+            <button type="button">Equipes</button>
+          </a>
+        </div>
+      </section>
+
+      <h1 class="header-apresentacao">Notícias Relacionadas</h1>
+      <div class="horizontal-line"></div>
+
+      {/*Seção das noticias*/}
+      
+      <section class="section-noticias">
+        <div class="card-container-news">
+          <div class="card-news">
+            <img src="src/assets/img/home/secao/noticia1-fe.jpg" alt="" />
+
+            <div class="card-content-news">
+              <h2>
+                Brasil encanta e recebe abertura da Fórmula E pela primeira vez
+                na história
+              </h2>
+              <p>
+                A Fórmula E oficializou nesta terça-feira (11) o calendário da
+                temporada 2024/25, que voltará a ser realizada em dois anos
+                diferentes e compreende o maior número de corridas da história
+                da categoria, com 17 provas.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-news">
+            <img src="src/assets/img/home/secao/noticia2-fe.png" alt="" />
+
+            <div class="card-content-news">
+              <h2>Fórmula E e FIA revelam novo carro de corrida</h2>
+              <p>
+                O GEN3 Evo totalmente elétrico será capaz de ir de 0 a 60 mp/h
+                ou 96 km/h em apenas 1,82s. O desempenho é 30% mais rápido que
+                um carro de F1 e 36% na comparação com o atual modelo, usado nos
+                E-Prix da décima edição do Mundial.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-news">
+            <img src="src/assets/img/home/secao/noticia3-fe.webp" alt="" />
+
+            <div class="card-content-news">
+              <h2>
+                Fórmula E 'desafia' velocidade da F1 e explica parceria com
+                clube paulista
+              </h2>
+              <p>
+                "Nossos carros estão ficando muito mais rápidos. Então, para
+                mostrarmos nosso potencial, em alguns circuitos de rua não temos
+                como fazer isso", disse o CEO
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </HomeStyle>
   );
 };
 
