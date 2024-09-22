@@ -3,7 +3,7 @@ import pilotos from "../assets/img/home/secao/pilotos.jpg";
 
 const Home = () => {
   return (
-    <HomeStyle>
+    <HomeStyle className="margin-bottom-100">
       <section className="section-apresentacao">
         <h1 className="header-apresentacao">Nossos Diferenciais</h1>
 
@@ -319,12 +319,12 @@ const Home = () => {
 
       {/*Seção das equipes*/}
 
-      <section class="secao equipes">
-        <div class="secao-img">
+      <section className="secao equipes">
+        <div className="secao-img">
           <img src="src/assets/img/home/secao/equipes.jpg" alt="Equipes" />
         </div>
 
-        <div class="secao-texto">
+        <div className="secao-texto">
           <h1>Equipes</h1>
           <p>
             As equipes da Fórmula E são compostas por fabricantes renomados e
@@ -344,17 +344,17 @@ const Home = () => {
         </div>
       </section>
 
-      <h1 class="header-apresentacao">Notícias Relacionadas</h1>
-      <div class="horizontal-line"></div>
+      <h1 className="header-apresentacao">Notícias Relacionadas</h1>
+      <div className="horizontal-line"></div>
 
       {/*Seção das noticias*/}
       
-      <section class="section-noticias">
-        <div class="card-container-news">
-          <div class="card-news">
+      <section className="section-noticias">
+        <div className="card-container-news">
+          <div className="card-news">
             <img src="src/assets/img/home/secao/noticia1-fe.jpg" alt="" />
 
-            <div class="card-content-news">
+            <div className="card-content-news">
               <h2>
                 Brasil encanta e recebe abertura da Fórmula E pela primeira vez
                 na história
@@ -368,10 +368,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="card-news">
+          <div className="card-news">
             <img src="src/assets/img/home/secao/noticia2-fe.png" alt="" />
 
-            <div class="card-content-news">
+            <div className="card-content-news">
               <h2>Fórmula E e FIA revelam novo carro de corrida</h2>
               <p>
                 O GEN3 Evo totalmente elétrico será capaz de ir de 0 a 60 mp/h
@@ -382,10 +382,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div class="card-news">
+          <div className="card-news">
             <img src="src/assets/img/home/secao/noticia3-fe.webp" alt="" />
 
-            <div class="card-content-news">
+            <div className="card-content-news">
               <h2>
                 Fórmula E 'desafia' velocidade da F1 e explica parceria com
                 clube paulista

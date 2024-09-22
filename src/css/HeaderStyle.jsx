@@ -5,20 +5,22 @@ import car from "../assets/img/home/carrousel/car.jpg";
 
 export const HeaderStyle = styled.section`
   .container-header {
-    ${ props => props.isHome 
-    ? `
     background: url(${car});
     height: 100vh;
-    `
-    : `
-    background: black;
-    height: 100%;}
-    `};
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     
+  }
+
+  .header-not-in-home{
+    background: black;
+    height: 100%;
+  }
+
+  .header-not-in-home #header{
+    background: none;
   }
 
   .container-header #formula {
@@ -40,15 +42,7 @@ export const HeaderStyle = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ${ props => props.isHome 
-    ?
-    `
     background-color: rgba(217, 217, 217, 0.2);
-    `
-    : 
-    `
-    background: none;
-    `};
     height: 80px;
     width: auto;
     position: relative;

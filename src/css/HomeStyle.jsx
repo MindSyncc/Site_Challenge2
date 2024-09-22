@@ -5,6 +5,7 @@ import corrida_usa from "../assets/img/home/secao/img3-usa.jpeg";
 import corrida_uk from "../assets/img/home/secao/img4-uk-fe.jpg";
 
 export const HomeStyle = styled.section`
+
   /* Texto de apresentação */
 
   .section-apresentacao {

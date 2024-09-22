@@ -45,7 +45,7 @@ const Pilotos = () => {
 
 
   return(
-    <PilotosStyle>
+    <PilotosStyle className="margin-bottom-100">
       <section id="pagina-pilotos">
 
         <div className="nossos_carros">

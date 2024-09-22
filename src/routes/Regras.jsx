@@ -36,7 +36,7 @@ const Regras = () => {
   ESTA PARTE QUE CONTROLA A EXIBIÇÃO DO CONTEÚDO DAS REGRAS NÃO FUNCIONA (FIM)*/ 
 
   return(
-    <RegrasStyle>
+    <RegrasStyle className="margin-bottom-100">
       <div className="gallery">
           <div className="image-wrapper">
               <div className="image">

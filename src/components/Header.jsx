@@ -12,8 +12,8 @@ const Header = () => {
 
   return (
 
-    <HeaderStyle isHome = {isHome}>
-        <section className="container-header">
+    <HeaderStyle>
+        <section className={isHome ? 'container-header' : 'container-header header-not-in-home'}>
           <header id="header">
             <div className="logo-container">
               <Link to={'/home'}>

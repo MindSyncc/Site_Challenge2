@@ -5,9 +5,10 @@ import App from './App.jsx'
 import Error from './routes/Error.jsx'
 import Home from './routes/Home.jsx'
 import Calendario from './routes/Calendario.jsx'
+import Pilotos from './routes/Pilotos.jsx'
+import Classificacao from './routes/Classificacao.jsx'
 import Equipes from './routes/Equipes.jsx'
 import Login from './routes/Login.jsx'
-import Pilotos from './routes/Pilotos.jsx'
 import Regras from './routes/Regras.jsx'
 
 // Função que cria as rotas
@@ -23,9 +24,10 @@ const router = createBrowserRouter([
       {path: '/', element: <Home/>} ,
       {path: '/home', element: <Home/>} ,
       {path: '/calendario', element: <Calendario/>} ,
+      {path: '/pilotos', element: <Pilotos/>} ,
+      {path: '/classificacao', element: <Classificacao/>} ,
       {path: '/equipes', element: <Equipes/>} ,
       {path: '/login', element: <Login/>} ,
-      {path: '/pilotos', element: <Pilotos/>} ,
       {path: '/regras', element: <Regras/>} ,
     ]
   }

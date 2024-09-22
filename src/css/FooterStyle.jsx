@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.section`
-  footer {
-    /*background-color: #333;*/
-    color: #fff;
-    padding: -80px 0px;
-  }
+  background-color: rgb(32, 32, 32);
+
 
   .rede {
     margin-top: 12px;
@@ -58,8 +55,6 @@ export const FooterStyle = styled.section`
 
   #fundodiv {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(32, 32, 32);
-    margin-top: 30px;
     padding: 5% 5%;
     display: flex;
     flex-wrap: wrap;

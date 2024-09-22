@@ -55,3 +55,23 @@
     font-size: 1.2rem;
   }
 }
+
+/* classes de utilidade */
+
+.margin-bottom-100{
+  margin-bottom: 30px;
+}
+
+.visible{
+  display: block;
+}
+
+.non-visible{
+  display: none;
+}
+
+/* desabilita o scroll quando o pop-up é mostrado */
+.active-pop-up {
+  overflow-y: hidden;
+}
+

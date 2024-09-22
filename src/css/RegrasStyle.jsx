@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const RegrasStyle = styled.section`
-
   .logo-container {
     background-color: black;
   }
@@ -70,5 +69,22 @@ export const RegrasStyle = styled.section`
   .titulo-regras {
     margin-top: 30px;
     font-size: 2rem;
+  }
+
+  /* Media query para telas menores, como celulares */
+  @media (max-width: 768px) {
+    .image-wrapper {
+      flex: 0 0 calc(50% - 20px); /* Duas imagens por linha */
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      margin-bottom: -30px;
+    }
+
+    footer {
+      margin-top: 130px;
+    }
   }
 `;

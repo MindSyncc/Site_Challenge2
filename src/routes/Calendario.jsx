@@ -26,7 +26,7 @@ const Calendario = () => {
   }, []);
 
   return (
-    <CalendarioStyle>
+    <CalendarioStyle className="margin-bottom-100">
       <div className="calendar-container">
         <h1>Calendário Fórmula E 2024</h1>
         <div id="calendar">
