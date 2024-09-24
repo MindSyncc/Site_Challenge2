@@ -7,6 +7,9 @@ import car from "../assets/img/home/carrousel/car.jpg";
 
 export const HomeStyle = styled.section`
 
+button{
+  border:none;
+}
   /* Texto de apresentação */
   #banner-logo {
     background: url(${car});
@@ -192,9 +195,25 @@ export const HomeStyle = styled.section`
   }
 
   .secao-video-img {
-    flex: 0 0 48%; /* 48% da largura da seção para a imagem */
+    flex: 0 0 47vw; /* 48% da largura da seção para a imagem */
     overflow: hidden;
   }
+  .secao-video-img iframe {
+    width:100%;
+    height:100%;
+  }
+
+
+  #button-classificacao {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 100px;
+  }
+
 
   .secao-img img {
     width: 100%;
@@ -246,6 +265,8 @@ export const HomeStyle = styled.section`
     margin: 30px 0px;
     font-size: 2rem;
     padding: 10px 20px;
+    border: none;
+    cursor: pointer;
   }
 
   .secao button:hover {
@@ -347,6 +368,7 @@ export const HomeStyle = styled.section`
 
   .container-botao {
     margin-top: 50px;
+    text-align: center;
   }
 
   #button-calendario {
@@ -574,13 +596,14 @@ export const HomeStyle = styled.section`
     font-size: 1.8rem;
     margin-bottom: 100px;
   }
-
-  #button-classificacao:hover {
+  
+  #button-classificacao:hover{
     background-color: #989696;
     color: #000000;
     cursor: pointer;
-  }
 
+    
+  }
   @media (max-width: 480px) {
     .h1-classificacao {
       text-align: center;
@@ -994,3 +1017,4 @@ export const HomeStyle = styled.section`
     margin-bottom: -40px;
   }
 `;
+

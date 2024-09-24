@@ -1,6 +1,7 @@
 import { HomeStyle } from "../css/HomeStyle";
 import pilotos from "../assets/img/home/secao/pilotos.jpg";
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -106,9 +107,8 @@ const Home = () => {
       {/*Seção das regras*/}
       <section className="secao regras">
         <div className="secao-video-img">
+          
           <iframe
-            width="600"
-            height="359"
             src="https://www.youtube.com/embed/mE5c5jA2zis?si=3fc4lEIYIjzK5OGE"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -127,9 +127,9 @@ const Home = () => {
             esporte a motor, ao mesmo tempo em que oferece uma competição
             emocionante e de alta intensidade.
           </p>
-          <a href="regras.html">
+          <Link to={'/regras'}>
             <button type="button">Regras e Regulamentos</button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -149,11 +149,11 @@ const Home = () => {
               <p className="desc">Berlim</p>
               <p className="desc">Berlim E-Prix I</p>
               <div className="container-botao">
-                <a href="calendario.html">
+              <Link to={'/calendario'}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-                </a>
+              </Link>
               </div>
             </div>
             <div className="arrow">
@@ -172,11 +172,11 @@ const Home = () => {
               <p className="desc">Xangai</p>
               <p className="desc">Xangai E-Prix II</p>
               <div className="container-botao">
-                <a href="calendario.html">
+              <Link to={'/calendario'}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-                </a>
+              </Link>
               </div>
             </div>
             <div className="arrow">
@@ -195,11 +195,11 @@ const Home = () => {
               <p className="desc">Portland</p>
               <p className="desc">Portland E-Prix I</p>
               <div className="container-botao">
-                <a href="calendario.html">
+              <Link to={'/calendario'}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-                </a>
+              </Link>
               </div>
             </div>
             <div className="arrow">
@@ -218,11 +218,11 @@ const Home = () => {
               <p className="desc">Londres</p>
               <p className="desc">Londres E-Prix I</p>
               <div className="container-botao">
-                <a href="calendario.html">
+              <Link to={'/calendario'}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-                </a>
+              </Link>
               </div>
             </div>
             <div className="arrow">
@@ -249,9 +249,9 @@ const Home = () => {
             nacionalidades e iniciativas inclusivas, sendo pioneiros de um
             futuro sustentável no automobilismo.
           </p>
-          <a href="pilotos.html">
+          <Link to="/pilotos">
             <button type="button">Pilotos</button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -342,11 +342,11 @@ const Home = () => {
         </table>
 
         <div className="container-botao">
-          <a href="classificacao.html">
+          <Link to="/classificacao">
             <button id="button-classificacao" type="button">
               Clique aqui e confira a classificação completa
             </button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -371,9 +371,9 @@ const Home = () => {
             evolução contínua da categoria, promovendo um futuro mais
             sustentável no automobilismo.
           </p>
-          <a href="equipes.html">
+          <Link to="/equipes">
             <button type="button">Equipes</button>
-          </a>
+          </Link>
         </div>
       </section>
 
