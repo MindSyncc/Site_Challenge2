@@ -5,29 +5,36 @@ export const EquipesStyle = styled.section`
 /* para que o conteúdo fique abaixo do banner */
 position: relative;
 z-index: 5;
-padding-top: 100vh;
 padding-bottom: 30px;
 background-color: rgb(28, 28, 28);
 
-/* Estilos para o banner */
-#banner {
+/* Estilos para o carrousel */
+.slider {
   width: 100%;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow: hidden;
+  position: relative;
 }
 
-#banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.slider .carrousel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  height: 100vh;
+  overflow-y: hidden;
+  transition: opacity 0.2s ease-in-out;
 }
-/* Estilos adicionais para garantir que o conteúdo principal fique abaixo do banner */
+
+.slider .carrousel.active{
+  opacity: 1;
+}
+
+.slider .carrousel img {
+  width: 100%;
+  object-fit: contain;
+}
 
 .texto-inicio p {
   color: white;
@@ -46,6 +53,7 @@ background-color: rgb(28, 28, 28);
   grid-gap: 40px;
   margin-top: 50px;
 }
+
 .box {
   border-radius: 10px;
   position: relative;
@@ -53,12 +61,14 @@ background-color: rgb(28, 28, 28);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
 }
-.box img {
+
+#card-img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
-  display: block;
   transition: transform 0.5s;
 }
+
 .texto {
   height: 0;
   width: 100%;
@@ -77,6 +87,7 @@ background-color: rgb(28, 28, 28);
   transition: height 0.5s;
 }
 .texto h3 {
+  color: white;
   font-weight: 400;
   margin-bottom: 5px;
   margin-top: 80%;
@@ -156,15 +167,16 @@ background-color: rgb(28, 28, 28);
 .slideshow-container {
   position: relative;
   margin: auto;
-  width: 100%;
+  min-height: 20vw;
   max-width: 600px;
 }
 
-
-.mySlides {
-  display: none;
+.slide {
+  object-fit: cover;
+  width: 100%;
+  min-width: 100%;
+  max-height: 50vh;
 }
-
 
 .numbertext {
   color: #f2f2f2;
@@ -172,6 +184,11 @@ background-color: rgb(28, 28, 28);
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+
+.dots {
+  display: flex;
 }
 
 .dot {

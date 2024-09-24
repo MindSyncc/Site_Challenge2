@@ -4,19 +4,17 @@ import car from "../assets/img/home/carrousel/car.jpg";
 
 
 export const HeaderStyle = styled.section`
+
   .container-header {
-    background: url(${car});
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    
+    width: 100%;
+    position: absolute;
+    background-color: rgba(217, 217, 217, 0.2);
+    z-index: 10;
   }
 
   .header-not-in-home{
+    position: static;
     background: black;
-    height: 100%;
   }
 
   .header-not-in-home #header{
@@ -42,11 +40,8 @@ export const HeaderStyle = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(217, 217, 217, 0.2);
-    height: 80px;
     width: auto;
     position: relative;
-    z-index: 10;
   }
 
   .logo-container {

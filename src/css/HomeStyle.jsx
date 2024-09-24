@@ -3,13 +3,25 @@ import corrida_alemanha from "../assets/img/home/secao/img1-alemanha-fe.jpeg";
 import corrida_china from "../assets/img/home/secao/img2-china-fe.webp";
 import corrida_usa from "../assets/img/home/secao/img3-usa.jpeg";
 import corrida_uk from "../assets/img/home/secao/img4-uk-fe.jpg";
+import car from "../assets/img/home/carrousel/car.jpg";
 
 export const HomeStyle = styled.section`
 
   /* Texto de apresentação */
+  #banner-logo {
+    background: url(${car});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
 
   .section-apresentacao {
     padding: 80px 100px;
+
   }
   .header-apresentacao {
     text-align: center;

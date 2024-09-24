@@ -1,9 +1,13 @@
 import { HomeStyle } from "../css/HomeStyle";
 import pilotos from "../assets/img/home/secao/pilotos.jpg";
 
+
 const Home = () => {
   return (
     <HomeStyle className="margin-bottom-100">
+
+      <div id="banner-logo"></div>
+
       <section className="section-apresentacao">
         <h1 className="header-apresentacao">Nossos Diferenciais</h1>
 

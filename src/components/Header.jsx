@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '/home';  
+  const isHome = location.pathname === '/' || location.pathname === '/home' || location.pathname === '/equipes';  
 
 
   return (

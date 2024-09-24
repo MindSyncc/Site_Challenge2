@@ -2,16 +2,30 @@ import { useState } from "react";
 import { EquipesStyle } from "../css/EquipesStyle";
 import equipes from "../../lista-equipes.json";
 import ModalEquipes from "../components/ModalEquipes";
+import Carrousel from "../components/Carrousel";
 
 const Equipes = () => {
 
+  {/*imagens para o carrousel*/}
+  let imagens = [
+    "src/assets/img/equipes/cupra/cupra2.jpg",
+    "src/assets/img/equipes/ds/ds2.jpg",
+    "src/assets/img/equipes/andretti/andretti2.jpeg",
+    "src/assets/img/equipes/envision/envision2.webp",
+    "src/assets/img/equipes/ert/ert2.jpg",
+    "src/assets/img/equipes/jaguar/jaguar2.avif",
+    "src/assets/img/equipes/mahindra/mahindra2.webp",
+    "src/assets/img/equipes/maserati/maserati.jpg",
+    "src/assets/img/equipes/mclaren/mclaren.jpg",
+    "src/assets/img/equipes/nissan/nissan.jpg",
+    "src/assets/img/equipes/porsche/porsche.jpg"
+  ];
   
-
   return (
     <EquipesStyle>
-      <div id="banner">
-        <img id="imgBanner" src="sua-imagem.jpg" alt="Banner" />
-      </div>
+
+      <Carrousel delay= '3000' slideArr = {imagens}/>
+      
 
       <div className="texto-inicio">
         <p>Temporada 23/24</p>
@@ -21,12 +35,10 @@ const Equipes = () => {
         <div className="box-area">
 
           {equipes.map((equipe, index) => {
-            const { nameEquipe, descricao, equipeId } = equipe
+            const { nameEquipe, descricao, equipeId, equipeImages } = equipe
             return (
               <div className="box" key={nameEquipe}>
-                <picture>
-                  <img src={`src/assets/img/equipes/${equipeId}/${equipeId}.jpg`}/>
-                </picture>
+                  <img src={`src/assets/img/equipes/${equipeId}/${equipeId}.jpg`} id="card-img"/>
 
                 <div className="texto">
                   <h3>{nameEquipe}</h3>
@@ -38,7 +50,7 @@ const Equipes = () => {
                   nameEquipe= { nameEquipe } 
                   descricao = { descricao } 
                   initialIsOpen= { false }
-                  equipeId = { equipeId }/>
+                  equipeImages = { equipeImages }/>
                 </div>
               </div>    
             )

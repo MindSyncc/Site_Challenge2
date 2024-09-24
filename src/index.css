@@ -58,8 +58,13 @@
 
 /* classes de utilidade */
 
-.margin-bottom-100{
+
+.margin-bottom-100 {
   margin-bottom: 30px;
+}
+
+.padding-bottom-300 {
+  padding-bottom: 90px;
 }
 
 .visible{
@@ -73,5 +78,13 @@
 /* desabilita o scroll quando o pop-up é mostrado */
 .active-pop-up {
   overflow-y: hidden;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.slide {
+  display: block;
 }
 
