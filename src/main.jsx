@@ -10,6 +10,7 @@ import Classificacao from './routes/Classificacao.jsx'
 import Equipes from './routes/Equipes.jsx'
 import Login from './routes/Login.jsx'
 import Regras from './routes/Regras.jsx'
+import Noticias from './routes/Noticias.jsx'
 
 // Função que cria as rotas
 
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       {path: '/equipes', element: <Equipes/>} ,
       {path: '/login', element: <Login/>} ,
       {path: '/regras', element: <Regras/>} ,
+      {path: '/noticias', element: <Noticias/>} ,
     ]
   }
 ])
