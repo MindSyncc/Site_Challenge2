@@ -33,7 +33,7 @@ const Header = () => {
                   <Link to={'/regras'}>Regras</Link>
                 </li>
                 <li className="navlink">
-                  <Link to={'/calendario'}>Calendario</Link>
+                  <Link to={'/calendario'}>Calendário</Link>
                 </li>
                 <li className="navlink">
                   <Link to={'/pilotos'}>Pilotos</Link>
@@ -45,7 +45,7 @@ const Header = () => {
                   <Link to={'/equipes'}>Equipes</Link>
                 </li>
                 <li className="navlink">
-                  <Link to={'/noticias'}>Noticias</Link>
+                  <Link to={'/noticias'}>Notícias</Link>
                 </li>
                 <li className="navlink">
                   <Link to={'/jogo'}>Jogo</Link>
