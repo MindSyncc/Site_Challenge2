@@ -4,6 +4,7 @@ import corrida_china from "../assets/img/home/secao/img2-china-fe.webp";
 import corrida_usa from "../assets/img/home/secao/img3-usa.jpeg";
 import corrida_uk from "../assets/img/home/secao/img4-uk-fe.jpg";
 import car from "../assets/img/home/carrousel/car.jpg";
+import automobile from "../assets/img/home/carrousel/automobile.jpg";
 
 export const HomeStyle = styled.section`
 
@@ -52,6 +53,16 @@ button{
     body {
       overflow-x: hidden;
     }
+      #banner-logo {
+    background: url(${automobile});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
 
     .header-apresentacao {
       font-size: 3.2rem;
