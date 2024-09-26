@@ -27,12 +27,13 @@ export const NoticiasStyle = styled.section`
     margin-top: 30px;
   }
 
-  .section-noticias {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-  }
+.section-noticias{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin-bottom: 5vh;
+}
 
   .card-news {
     background-color: #fff;

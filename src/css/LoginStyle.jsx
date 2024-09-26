@@ -233,14 +233,14 @@ export const LoginStyle = styled.section`
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s;
+    animation: slidein 0.5s;
     /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
   }
 
   .sign-up-js .content::before {
-    animation: slideout 1.3s;
+    animation: slideout 0.5s;
     /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
@@ -263,14 +263,14 @@ export const LoginStyle = styled.section`
   .sign-in-js .first-content .second-column {
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s;
+    animation: deslocamentoEsq 0.5s;
     /*MODIFIQUEI DE 3s PARA 1.3s*/
   }
 
   .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s;
+    animation: deslocamentoDir 0.5s;
     /*MODIFIQUEI DE 3s PARA 1.3s*/
   }
 
