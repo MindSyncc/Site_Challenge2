@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
 
   useEffect(() => {
+
+
+
     const circulos = document.querySelectorAll('.circulo');
     const textos = document.querySelectorAll('.texto');
 
@@ -341,14 +344,15 @@ const Home = () => {
           </tbody>
         </table>
 
-        <div className="container-botao">
+
+      </section>
+      <div className="container-botao">
           <Link to="/classificacao">
             <button id="button-classificacao" type="button">
               Clique aqui e confira a classificação completa
             </button>
           </Link>
         </div>
-      </section>
 
       {/*Seção das equipes*/}
 
@@ -432,6 +436,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div class="container-botao-noticias"><Link to="/noticias"><a id="botao-noticias" href="noticias.html" class="link-noticias">Ver mais notícias relacionadas &rarr;</a></Link></div>
     </HomeStyle>
   );
 };
