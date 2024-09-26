@@ -1,13 +1,11 @@
 /* reset básico */
 
-
 /*IMPORTANTE: INSERIR AQUI APENAS O ESTILO QUE VAI SER APLICADO A TODAS AS PÁGINA, QUE SÃO A BARRA DE NAVEGAÇÃO E NO FOOTER*/
 
-
 /* Nome da fonte importada: Josefin Sans */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 /* Nome da fonte importada: Roboto Mono */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   padding: 0;
@@ -58,7 +56,6 @@
 
 /* classes de utilidade */
 
-
 .margin-bottom-100 {
   margin-bottom: 30px;
 }
@@ -67,11 +64,11 @@
   padding-bottom: 90px;
 }
 
-.visible{
+.visible {
   display: block;
 }
 
-.non-visible{
+.non-visible {
   display: none;
 }
 
@@ -87,4 +84,3 @@
 .slide {
   display: block;
 }
-

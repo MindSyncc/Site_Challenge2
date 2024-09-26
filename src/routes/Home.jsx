@@ -1,44 +1,38 @@
 import { HomeStyle } from "../css/HomeStyle";
 import pilotos from "../assets/img/home/secao/pilotos.jpg";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 const Home = () => {
-
   useEffect(() => {
-
-
-
-    const circulos = document.querySelectorAll('.circulo');
-    const textos = document.querySelectorAll('.texto');
+    const circulos = document.querySelectorAll(".circulo");
+    const textos = document.querySelectorAll(".texto");
 
     const handleClick = (circulo) => {
-      const idCirculo = circulo.id.replace('circulo-', '');
-      circulos.forEach(c => c.classList.remove('ativo'));
-      circulo.classList.add('ativo');
-      textos.forEach(t => {
-        t.classList.remove('ativo');
-        t.style.display = 'none';
+      const idCirculo = circulo.id.replace("circulo-", "");
+      circulos.forEach((c) => c.classList.remove("ativo"));
+      circulo.classList.add("ativo");
+      textos.forEach((t) => {
+        t.classList.remove("ativo");
+        t.style.display = "none";
       });
       const textoAtivo = document.getElementById(`texto-${idCirculo}`);
-      textoAtivo.classList.add('ativo');
-      textoAtivo.style.display = 'block';
+      textoAtivo.classList.add("ativo");
+      textoAtivo.style.display = "block";
     };
 
-    circulos.forEach(circulo => {
-      circulo.addEventListener('click', () => handleClick(circulo));
+    circulos.forEach((circulo) => {
+      circulo.addEventListener("click", () => handleClick(circulo));
     });
 
     return () => {
-      circulos.forEach(circulo => {
-        circulo.removeEventListener('click', () => handleClick(circulo));
+      circulos.forEach((circulo) => {
+        circulo.removeEventListener("click", () => handleClick(circulo));
       });
     };
   }, []);
   return (
     <HomeStyle className="margin-bottom-100">
-
       <div id="banner-logo"></div>
 
       <section className="section-apresentacao">
@@ -110,7 +104,6 @@ const Home = () => {
       {/*Seção das regras*/}
       <section className="secao regras">
         <div className="secao-video-img">
-          
           <iframe
             src="https://www.youtube.com/embed/mE5c5jA2zis?si=3fc4lEIYIjzK5OGE"
             title="YouTube video player"
@@ -130,7 +123,7 @@ const Home = () => {
             esporte a motor, ao mesmo tempo em que oferece uma competição
             emocionante e de alta intensidade.
           </p>
-          <Link to={'/regras'}>
+          <Link to={"/regras"}>
             <button type="button">Regras e Regulamentos</button>
           </Link>
         </div>
@@ -152,11 +145,11 @@ const Home = () => {
               <p className="desc">Berlim</p>
               <p className="desc">Berlim E-Prix I</p>
               <div className="container-botao">
-              <Link to={'/calendario'}>
+                <Link to={"/calendario"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-              </Link>
+                </Link>
               </div>
             </div>
             <div className="arrow">
@@ -175,11 +168,11 @@ const Home = () => {
               <p className="desc">Xangai</p>
               <p className="desc">Xangai E-Prix II</p>
               <div className="container-botao">
-              <Link to={'/calendario'}>
+                <Link to={"/calendario"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-              </Link>
+                </Link>
               </div>
             </div>
             <div className="arrow">
@@ -198,11 +191,11 @@ const Home = () => {
               <p className="desc">Portland</p>
               <p className="desc">Portland E-Prix I</p>
               <div className="container-botao">
-              <Link to={'/calendario'}>
+                <Link to={"/calendario"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-              </Link>
+                </Link>
               </div>
             </div>
             <div className="arrow">
@@ -221,11 +214,11 @@ const Home = () => {
               <p className="desc">Londres</p>
               <p className="desc">Londres E-Prix I</p>
               <div className="container-botao">
-              <Link to={'/calendario'}>
+                <Link to={"/calendario"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
-              </Link>
+                </Link>
               </div>
             </div>
             <div className="arrow">
@@ -343,16 +336,14 @@ const Home = () => {
             </tr>
           </tbody>
         </table>
-
-
       </section>
       <div className="container-botao">
-          <Link to="/classificacao">
-            <button id="button-classificacao" type="button">
-              Clique aqui e confira a classificação completa
-            </button>
-          </Link>
-        </div>
+        <Link to="/classificacao">
+          <button id="button-classificacao" type="button">
+            Clique aqui e confira a classificação completa
+          </button>
+        </Link>
+      </div>
 
       {/*Seção das equipes*/}
 
@@ -385,7 +376,7 @@ const Home = () => {
       <div className="horizontal-line"></div>
 
       {/*Seção das noticias*/}
-      
+
       <section className="section-noticias">
         <div className="card-container-news">
           <div className="card-news">
@@ -436,7 +427,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div class="container-botao-noticias"><Link to="/noticias"><a id="botao-noticias" href="noticias.html" class="link-noticias">Ver mais notícias relacionadas &rarr;</a></Link></div>
+      <div class="container-botao-noticias">
+        <Link to="/noticias">
+          <a id="botao-noticias" href="noticias.html" class="link-noticias">
+            Ver mais notícias relacionadas &rarr;
+          </a>
+        </Link>
+      </div>
     </HomeStyle>
   );
 };

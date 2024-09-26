@@ -148,7 +148,6 @@ export const PilotosStyle = styled.section`
     font-size: 30px;
   }
 
-  
   .info-button {
     font-size: 1.8rem;
     background-color: #af0423;
@@ -159,7 +158,7 @@ export const PilotosStyle = styled.section`
     padding: 10px 20px;
     cursor: pointer;
   }
-  
+
   #pilotInfo {
     position: absolute;
     bottom: -60%;
@@ -170,7 +169,7 @@ export const PilotosStyle = styled.section`
     border: 2px solid black;
     border-radius: 10px;
     opacity: 0;
-    animation: scale-display .5s forwards;
+    animation: scale-display 0.5s forwards;
   }
 
   .hidden {
@@ -190,7 +189,6 @@ export const PilotosStyle = styled.section`
   .lower {
     transform: translateY(200%);
   }
-
 
   .button-pilotos {
     text-align: center;

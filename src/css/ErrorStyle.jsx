@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ErrorStyle = styled.section`
-.erro img{
+  .erro img {
     width: 100%;
-}`
+  }
+`;

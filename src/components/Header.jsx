@@ -2,11 +2,14 @@ import logo from "../assets/img/logo/logo.jpg";
 import { HeaderStyle } from "../css/HeaderStyle";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const Header = () => {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '/home' || location.pathname === '/equipes';
+  const isHome =
+    location.pathname === "/" ||
+    location.pathname === "/home" ||
+    location.pathname === "/equipes";
   const mobileMenuRef = useRef(null);
   const navListRef = useRef(null);
   const navLinksRef = useRef([]);
@@ -24,7 +27,9 @@ const Header = () => {
       this.navLinks.forEach((link, index) => {
         link.style.animation
           ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`);
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
       });
     }
 
@@ -61,10 +66,14 @@ const Header = () => {
 
   return (
     <HeaderStyle>
-      <section className={isHome ? 'container-header' : 'container-header header-not-in-home'}>
+      <section
+        className={
+          isHome ? "container-header" : "container-header header-not-in-home"
+        }
+      >
         <header id="header">
           <div className="logo-container">
-            <Link to={'/home'}>
+            <Link to={"/home"}>
               <img src={logo} alt="Formula E Logo" id="logo" />
               <span id="formula">Fórmula </span>
               <span id="e">E</span>
@@ -77,9 +86,25 @@ const Header = () => {
               <div className="line3"></div>
             </div>
             <ul className="nav-list" ref={navListRef}>
-              {['/regras', '/calendario', '/pilotos', '/classificacao', '/equipes', '/noticias', '/jogo', '/login'].map((path, index) => (
-                <li className="navlink" key={index} ref={el => navLinksRef.current[index] = el}>
-                  <Link to={path}>{path.replace('/', '').charAt(0).toUpperCase() + path.slice(2)}</Link>
+              {[
+                "/regras",
+                "/calendario",
+                "/pilotos",
+                "/classificacao",
+                "/equipes",
+                "/noticias",
+                "/jogo",
+                "/login",
+              ].map((path, index) => (
+                <li
+                  className="navlink"
+                  key={index}
+                  ref={(el) => (navLinksRef.current[index] = el)}
+                >
+                  <Link to={path}>
+                    {path.replace("/", "").charAt(0).toUpperCase() +
+                      path.slice(2)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,6 +113,6 @@ const Header = () => {
       </section>
     </HeaderStyle>
   );
-}
+};
 
 export default Header;

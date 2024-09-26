@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import car from "../assets/img/home/carrousel/car.jpg";
 
-
-
 export const HeaderStyle = styled.section`
-
   .container-header {
     width: 100%;
     position: absolute;
@@ -12,12 +9,12 @@ export const HeaderStyle = styled.section`
     z-index: 10;
   }
 
-  .header-not-in-home{
+  .header-not-in-home {
     position: static;
     background: black;
   }
 
-  .header-not-in-home #header{
+  .header-not-in-home #header {
     background: none;
   }
 
@@ -36,7 +33,6 @@ export const HeaderStyle = styled.section`
   }
 
   #header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +131,6 @@ export const HeaderStyle = styled.section`
     body {
       overflow-x: hidden;
     }
-    
 
     .logo-container {
       background-color: rgba(217, 217, 217, 0);
@@ -190,18 +185,16 @@ export const HeaderStyle = styled.section`
     .active {
       font-size: 1rem;
     }
-      .nav-list{
-      display:none;
-      }
-      
+    .nav-list {
+      display: none;
+    }
   }
 
   .nav-list.active {
     transform: translateX(0);
     transition: transform 0.3s ease-in;
-    display:flex;
+    display: flex;
   }
-
 
   @keyframes navLinkFade {
     from {
@@ -267,59 +260,52 @@ export const HeaderStyle = styled.section`
       margin: 0;
       padding: 0;
     }
-    
+
     .active {
       font-size: clamp(0.7rem, 0.8rem, 1.57rem);
     }
-
-    
   }
-    @media (max-width: 480px) {
-  #logo {
-    width: 4.8rem;
-    height: auto;
+  @media (max-width: 480px) {
+    #logo {
+      width: 4.8rem;
+      height: auto;
+    }
+
+    #header {
+      height: 4.8rem;
+    }
+
+    .navlink a {
+      font-size: 1.08rem;
+    }
+
+    .nav-list {
+      width: 70vw;
+      top: 4.8rem;
+    }
+
+    .container-header #e {
+      font-size: 2.4rem;
+    }
+
+    .container-header #formula {
+      font-size: 2.1rem;
+      padding: 10px;
+    }
+
+    .mobile-menu div {
+      width: 24px;
+      height: 1.5px;
+      margin: 8px;
+      background-color: #fff;
+    }
+
+    .logo-container {
+      margin: 0;
+      padding: 0;
+    }
+    .active {
+      font-size: clamp(0.7rem, 0.8rem, 1.57rem);
+    }
   }
-
-
-
-
-  #header{
-    height: 4.8rem;
-  }
-
-  .navlink a{
-    font-size: 1.08rem;
-  }
-
-  .nav-list{
-    width: 70vw;
-    top: 4.8rem;
-  }
-
-  .container-header #e{
-    font-size: 2.4rem
-  }
-
-  .container-header #formula{
-    font-size: 2.1rem;
-    padding: 10px;
-  }
-
-  .mobile-menu div {
-    width: 24px;
-    height: 1.5px;
-    margin: 8px;
-    background-color: #fff;
-  }
-
-  .logo-container{
-    margin: 0;
-    padding: 0;
-  }
-.active{
-  font-size: clamp(0.7rem, 0.8rem, 1.57rem);
-}
-
-}
-
 `;

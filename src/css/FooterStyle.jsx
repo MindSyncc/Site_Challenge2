@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const FooterStyle = styled.section`
   background-color: rgb(32, 32, 32);
 
-
   .rede {
     margin-top: 12px;
     font-size: 1.5rem;
