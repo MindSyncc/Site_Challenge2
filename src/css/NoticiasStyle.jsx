@@ -36,6 +36,7 @@ export const NoticiasStyle = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 80vh;
+  margin-bottom: 5vh;
 }
 
 .card-news{

@@ -67,8 +67,6 @@ const Pilotos = () => {
             
         </div>
               
-          <br/>
-          <br/>
 
         <div className="button-pilotos">
           <button className={buttonClassName} onClick={showPilotInfo}>Saiba mais sobre o piloto</button>

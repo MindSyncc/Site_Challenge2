@@ -153,16 +153,21 @@ export const PilotosStyle = styled.section`
     font-size: 1.8rem;
     background-color: #af0423;
     border-radius: 50px;
-    margin: 5% 0;
+    margin: 0 0 5% 0;
     transition: transform 0.3s ease;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
+    border: none;
+  }
+
+  .info-button:hover{
+    background-color: #48111BFF;
   }
   
   #pilotInfo {
     position: absolute;
-    bottom: -60%;
+    bottom: -45%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.8);
