@@ -147,6 +147,15 @@ export const FooterStyle = styled.section`
     font-size: 1.8rem;
   }
 
+ .fab{
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+ 
+
+
+
   /* Media Queries para responsividade */
   @media (max-width: 768px) {
     #fundodiv {
