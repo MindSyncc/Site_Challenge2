@@ -1,7 +1,7 @@
 import { RegrasStyle } from "../css/RegrasStyle"
 import seta from '../assets/img/home/secao/seta.png'
 import imgSustentabilidade from '../assets/img/home/secao/sustentabilidade.webp'
-import imgBateria from '../assets/img/home/secao/sustentabilidade.webp'
+import imgBateria from '../assets/img/home/secao/bateria-potencia.avif'
 import imgEnergia from '../assets/img/home/secao/recupera-energia.png'
 import imgFan from '../assets/img/home/secao/fanboost1.1.png'
 import { useState } from "react"
@@ -37,7 +37,7 @@ const Regras = () => {
           <div className="image-wrapper">
               <div className="image">
                   <img src={imgBateria} alt="Imagem 2" />
-                  <h2 className="titulo-regras">Sustentabilidade</h2>
+                  <h2 className="titulo-regras">Baterias e Potência</h2>
                   <div className="arrow" onClick={() => toggleShowVisibility(1)}>
                       <img src={seta} alt="" />
                   </div>
@@ -52,7 +52,7 @@ const Regras = () => {
           <div className="image-wrapper">
               <div className="image">
                   <img src={imgEnergia} alt="Imagem 3" />
-                  <h2 className="titulo-regras">Sustentabilidade</h2>
+                  <h2 className="titulo-regras">Sistema de Recuperação de Energia</h2>
                   <div className="arrow">
                       <img src={seta} alt="" onClick={() => toggleShowVisibility(2)}/>
                   </div>
@@ -67,7 +67,7 @@ const Regras = () => {
           <div className="image-wrapper">
               <div className="image">
                   <img src={imgFan} alt="Imagem 4" />
-                  <h2 className="titulo-regras">Sustentabilidade</h2>
+                  <h2 className="titulo-regras">Fanboost</h2>
                   <div className="arrow" onClick={() => toggleShowVisibility(3)}>
                       <img src={seta} alt="" />
                   </div>
