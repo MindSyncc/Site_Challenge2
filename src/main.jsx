@@ -12,6 +12,8 @@ import Login from './routes/Login.jsx'
 import Regras from './routes/Regras.jsx'
 import Noticias from './routes/Noticias.jsx'
 import Jogo from './routes/Jogo.jsx'
+import Usuario from './routes/Usuario.jsx'
+import ListarUsuarios from './routes/ListarUsuarios.jsx'
 
 // Função que cria as rotas
 
@@ -34,6 +36,12 @@ const router = createBrowserRouter([
       {path: '/regras', element: <Regras/>} ,
       {path: '/noticias', element: <Noticias/>} ,
       {path: '/jogo', element: <Jogo/>} ,
+      {path:'/usuario', element:<Usuario/>},
+
+      {path:'/listarUsuarios',element:<ListarUsuarios/>},
+
+
+      {path:'/editarUsuario/:id',element:<Usuario/>},
     ]
   }
 ])
