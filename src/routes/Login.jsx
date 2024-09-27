@@ -103,12 +103,19 @@ const Login = () => {
               <p className="description description-primary">
                 Faça login com suas informações pessoais
               </p>
+              <button className="btn btn-second" id="loginButton">
+                  Entrar
+                </button>
+              <p className="description description-primary">
+                Não possui conta? Clique aqui para se cadastrar.
+              </p>
+
               <button
                 id="signin"
                 className="btn btn-primary"
                 onClick={toggleCadastro}
               >
-                Entrar
+                Cadastrar
               </button>
             </div>
 
