@@ -18,7 +18,7 @@ const RegrasFormulaE = () => {
   return (
     <RegrasStyle className="margin-bottom-100">
       <div>
-        <h1 className='regras-h1'>Regras da Fórmula E</h1>
+        <h1 className="regras-h1">Regras da Fórmula E</h1>
 
         <section>
           <h2>Campeonato e Classificação</h2>

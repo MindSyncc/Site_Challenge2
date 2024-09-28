@@ -18,7 +18,7 @@ const RegrasFormulaE = () => {
   return (
     <RegrasStyle className="margin-bottom-100">
       <div>
-        <h1 className='regras-h1'>Regras do E-Masters</h1>
+        <h1 className="regras-h1">Regras do E-Masters</h1>
         <p>
           Escolha 10 pilotos e uma equipe para competir nas duas fases: Corrida
           Principal e Corrida Classificatória. A pontuação será determinada pela
