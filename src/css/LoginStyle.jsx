@@ -2,23 +2,25 @@ import styled from "styled-components";
 
 export const LoginStyle = styled.section`
 
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 130vh;
+    height: 100vh;
     background: #c4c4c4;
-    margin-bottom: -30px;
+    
 
 }
 .content {
-    background-color: #fff;
+    background-color:#D1E2F6FF;
     border-radius: 15px;
     width: 960px;
     height: 70%;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    
 }
 
 .content::before {
@@ -37,6 +39,8 @@ export const LoginStyle = styled.section`
     font-weight: bold;
     text-transform: capitalize;
     margin-top: 20px;
+    display:flex;
+    justify-content:center;
 }
 
 .title-primary {
@@ -48,7 +52,7 @@ export const LoginStyle = styled.section`
 }
 
 .description {
-    font-size: 14px;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 30px;
 }
@@ -58,7 +62,8 @@ export const LoginStyle = styled.section`
 }
 
 .description-second {
-    color: #7f8c8d;
+    color: #000000FF;
+    font-size:2rem;
 }
 
 .btn {
@@ -100,7 +105,7 @@ export const LoginStyle = styled.section`
 }
 
 .btn-second:hover {
-    background-color: #001486;
+    background-color: #7A87D5FF;
     border: 1px solid #000;
     color: #000;
 }
@@ -124,6 +129,7 @@ export const LoginStyle = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .social-media {
@@ -136,6 +142,12 @@ export const LoginStyle = styled.section`
 
 .link-social-media .item-social-media {
     transition: background-color .5s;
+}
+
+.link-social-media .item-social-media {
+    background-color: #2a0077;
+    color: #ffffff;
+    border-color: #0a0068;
 }
 
 .link-social-media:hover .item-social-media {
@@ -164,12 +176,25 @@ export const LoginStyle = styled.section`
     flex-direction: column;
     width: 55%;
 }
+.form2 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.form2 input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 0px 10px;
+}
 
 .form input {
     height: 45px;
     width: 100%;
     border: none;
     background-color: #ecf0f1;
+    padding: 0px 10px;
 }
 
 input:-webkit-autofill {
@@ -177,12 +202,19 @@ input:-webkit-autofill {
     -webkit-text-fill-color: #000 !important;
 }
 
-.label-input {
-    background-color: #ecf0f1;
+
+.label-input{
+    background-color: #2a0077;
     display: flex;
     align-items: center;
     margin: 8px;
+    
 }
+.label-input input{
+    font-size:1.5rem;
+}
+
+
 
 .icon-modify {
     color: #7f8c8d;
@@ -575,15 +607,14 @@ input:-webkit-autofill {
 
 
 
-.login-form{
-    width:100%;
-}
+
 .titulo-login{
     display:block;
     font-size:2.3rem;
     line-height:1.3;
     text-align:center;
     color:#213550;
+    
 }
 .w-input{
     width:100%;
@@ -592,12 +623,18 @@ input:-webkit-autofill {
     margin-bottom:30px;
     border:none;
     border-bottom:2px solid #d9d9d9;
+    
 }
 .w-input:hover{
     border-bottom:2px solid blue;
 }
-.input-form{
+.far ,.fas{
     font-size:1rem;
+    color:white;
+    padding:0px 20px;
+}
+.input-form{
+    
     color:#555;
     line-height:1.3;
     display:block;
@@ -605,26 +642,21 @@ input:-webkit-autofill {
     padding: 0 5px;
     border:none;
     outline:0;
+    background-color: #0E004D;
 }
 .login-btn{
     width:100%;
     display:flex;
-    justify-content:center
+    justify-content:center;
 }
 
-.login-form-btn{
-    font-size:1rem;
-    width:100%;
-    height:50px;
-    border-radius:20px;
-    background:blue;
-    color:#fff;
-    text-transform:uppercase;
-    transition: all 0.5s;
+.list-social-media{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
-.login-form-btn:hover{
-    background:#333;
-}
+
+
 
 .utilidades{
     margin-top: 20px;
@@ -632,6 +664,12 @@ input:-webkit-autofill {
 }
 .text1{
     color:#555;
+    font-size:1.5rem;
+}
+.link{
+    font-size:1.5rem;
+    color: blue;
+    cursor: pointer;
 }
 .text2{
     color:blue;
@@ -646,5 +684,11 @@ img:hover{
     box-shadow:10px 10px 10px blue;
     transition:.5s;
 }
+ul li{
+    list-style: none;
+    line-height:1.5rem;
+}
+
+
 
 `

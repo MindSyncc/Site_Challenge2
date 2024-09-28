@@ -46,7 +46,7 @@ const Login = () => {
       sessionStorage.setItem("senha", token);
       navigate("/jogo");
     } else {
-      alert("usuario/senha inválidos");
+      alert("Usuário ou senha inválidos. Digite novamente.");
     }
   };
 
@@ -103,27 +103,34 @@ const Login = () => {
               <p className="description description-primary">
                 Faça login com suas informações pessoais
               </p>
-              <button className="btn btn-second" id="loginButton">
-                Entrar
-              </button>
-              <p className="description description-primary">
-                Não possui conta? Clique aqui para se cadastrar.
-              </p>
 
-              <button
-                id="signin"
-                className="btn btn-primary"
-                onClick={toggleCadastro}
-              >
-                Cadastrar
-              </button>
             </div>
 
             <div class="second-column">
               <form className="login-form" onSubmit={handleSubmitLogin}>
-                <span className="titulo-login">Faça seu Login</span>
-
-                <div className="w-input">
+                <span className="title title-second">Faça seu Login</span>
+                <div className="social-media">
+                  <ul className="list-social-media">
+                    <a className="link-social-media" href="#">
+                      <li className="item-social-media facebook">
+                        <i className="fab fa-facebook-f"></i>
+                      </li>
+                    </a>
+                    <a className="link-social-media" href="#">
+                      <li className="item-social-media">
+                        <i className="fab fa-google-plus-g"></i>
+                      </li>
+                    </a>
+                    <a className="link-social-media" href="#">
+                      <li className="item-social-media">
+                        <i className="fab fa-linkedin-in"></i>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <div className="form2">
+                <label className="label-input" htmlFor="usuario">
+                  <i className="far fa-user icon-modify"></i>
                   <input
                     type="text"
                     className="input-form"
@@ -131,9 +138,12 @@ const Login = () => {
                     ref={usuario}
                     placeholder="Usuário"
                   />
-                </div>
+                </label>
+                
 
-                <div className="w-input">
+
+                <label className="label-input" htmlFor="usuario">
+                  <i className="fas fa-lock icon-modify"></i>
                   <input
                     type="password"
                     className="input-form"
@@ -141,10 +151,12 @@ const Login = () => {
                     ref={senha}
                     placeholder="Senha"
                   />
+                </label>
                 </div>
 
+
                 <div className="login-btn">
-                  <button className="login-form-btn" type="submit">
+                  <button className="btn btn-second" type="submit">
                     Login
                   </button>
                 </div>
@@ -171,18 +183,12 @@ const Login = () => {
             <div className="first-column">
               <h2 className="title title-primary">Bem-vindo!</h2>
               <p className="description description-primary">
-                Para se manter conectado conosco
+                Para se conectar conosco
               </p>
               <p className="description description-primary">
-                Faça login com suas informações pessoais
+                Cadastre-se aqui com suas informações
               </p>
-              <button
-                id="signin"
-                className="btn btn-primary"
-                onClick={toggleCadastro}
-              >
-                Entrar
-              </button>
+
             </div>
             <div className="second-column">
               <h2 className="title title-second">Criar conta</h2>
@@ -234,6 +240,14 @@ const Login = () => {
                 <button className="btn btn-second" type="submit">
                   Cadastrar-se
                 </button>
+                <ul className="utilidades">
+                  <li>
+                    <span className="text1">Já possui conta?</span>
+                  </li>
+                  <li>
+                    <span onClick={toggleCadastro} className="link">Clique aqui para entrar</span>
+                  </li>
+                </ul>
               </form>
             </div>
           </div>
@@ -281,7 +295,7 @@ const Login = () => {
               </p>
               <form className="form" onSubmit={handleSubmitLogin}>
                 <label className="label-input" htmlFor="email">
-                  <i className="far fa-envelope icon-modify"></i>
+                  <i className="far fa-user icon-modify"></i>
                   <input type="email" placeholder="Email" ref={usuario} />
                 </label>
 
