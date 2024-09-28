@@ -9,6 +9,7 @@ import news5 from "../assets/img/home/secao/news5.webp";
 import news6 from "../assets/img/home/secao/news6.png";
 
 const Noticias = () => {
+  
   return (
     <NoticiasStyle>
       <h1 className="h1-noticias">Notícias</h1>

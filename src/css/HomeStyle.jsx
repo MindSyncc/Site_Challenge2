@@ -20,6 +20,17 @@ export const HomeStyle = styled.section`
     top: 0;
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #banner-texto {
+    font-size: 3.5rem;
+    text-align: center;
+    max-width: 800px;
+    color: white;
+    text-shadow:   -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
+    font-weight:bold;
   }
 
   .section-apresentacao {

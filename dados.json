@@ -1,5 +1,9 @@
 {
   "usuarios": [
-
+    {
+      "id": "9b9c",
+      "usuario": "adm",
+      "senha": "123"
+    }
   ]
 }

@@ -4,87 +4,92 @@ export const RegrasStyle = styled.section`
   .logo-container {
     background-color: black;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
+  /* styles.css */
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: "Roboto Mono", monospace;
   }
 
-  .image-wrapper {
-    position: relative;
-    margin: 80px 10px 20px 10px; /* Ajuste conforme necessário */
-    flex: 0 0 calc(25% - 20px); /* Ajuste para 4 imagens por linha */
-    text-align: center; /* Centraliza o conteúdo */
-    margin-bottom: 180px;
-  }
-
-  .image {
-    position: relative;
-    display: inline-block; /* Garante que a seta fique na mesma linha que a imagem */
-  }
-
-  .image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .description {
-    position: absolute;
-    bottom: -200px; /* Posicionamento abaixo da imagem */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px;
-    display: none;
-    text-align: center; /* Centraliza o texto */
-  }
-
-  .description p {
-    font-size: 1.8rem;
-  }
-
-  .description.show {
-    display: block !important; /* Força a exibição da descrição */
-  }
-
-  .arrow {
-    position: absolute;
-    bottom: -40px; /* Posicionamento abaixo da imagem */
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Transição suave da rotação */
-  }
-
-  .arrow img {
-    width: 30px; /* Ajuste o tamanho conforme necessário */
-  }
-
-  .arrow.rotate {
-    transform: translateX(-50%) rotate(180deg); /* Rotação de 180 graus */
-  }
-
-  .titulo-regras {
-    margin-top: 30px;
+  * {
     font-size: 2rem;
   }
 
-  /* Media query para telas menores, como celulares */
-  @media (max-width: 768px) {
-    .image-wrapper {
-      flex: 0 0 calc(50% - 20px); /* Duas imagens por linha */
-      padding-top: 30px;
-      margin-bottom: 30px;
+ .regras-h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    
+  }
+
+  .botao-regras {
+    background-color: #191830;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align:center;
+}
+    .button-container{
+    text-align:center;
     }
 
-    .description {
-      margin-bottom: -30px;
-    }
 
-    footer {
-      margin-top: 130px;
-    }
+.botao-regras:hover {
+  background-color: #191815;
+  
+  
+}
+
+  h2 {
+    color: #6b0b0b;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align:center;
+    padding-bottom:3vh;
+  }
+
+  h3 {
+    color: #6b0b0b;
+    padding-bottom:3vh;
+  }
+
+  p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 2rem;
+    padding-bottom:3vh;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  section {
+    background: #BDBDBD;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin:50px;
+  }
+
+  section:nth-child(even) {
+    background: #eaeaea;
   }
 `;

@@ -33,7 +33,9 @@ const Home = () => {
   }, []);
   return (
     <HomeStyle className="margin-bottom-100">
-      <div id="banner-logo"></div>
+      <div id="banner-logo">
+      <p id="banner-texto">No E-Masters, você escolhe pilotos e uma equipe para competir em duas fases: Corrida Principal e Corrida Classificatória. Acumule pontos acertando posições, voltas rápidas e ultrapassagens, e lidere sua equipe até a vitória. Misturando estratégia e conhecimento, o jogo coloca você no coração da Fórmula E. Quem será o campeão?</p>
+      </div>
 
       <section className="section-apresentacao">
         <h1 className="header-apresentacao">Nossos Diferenciais</h1>
