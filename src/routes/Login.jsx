@@ -46,7 +46,7 @@ const Login = () => {
       sessionStorage.setItem("senha", token);
       navigate("/jogo");
     } else {
-      alert("Usuário ou senha inválidos. Digite novamente.");
+      alert("Usuário/senha inválidos");
     }
   };
 
@@ -55,23 +55,7 @@ const Login = () => {
     setNovoUsuario({ ...novoUsuario, [e.target.name]: e.target.value });
   };
 
-  // Função de envio de cadastro de usuário
-  const handleSubmitCadastro = (e) => {
-    e.preventDefault();
-    let metodo = id ? "put" : "post";
-
-    fetch(`http://localhost:5000/usuarios/${id ? id : ""}`, {
-      method: metodo,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(novoUsuario),
-    }).then(() => {
-      navigate("/login");
-    });
-  };
-
-  // useEffect para buscar usuários na API (para login e edição de usuários)
+  // useEffect para buscar os usuários na API
   useEffect(() => {
     if (isCadastro && id) {
       fetch(`http://localhost:5000/usuarios/${id}`)
@@ -80,9 +64,58 @@ const Login = () => {
     } else {
       fetch("http://localhost:5000/usuarios/")
         .then((res) => res.json())
-        .then((res) => setUsuarios(res));
+        .then((res) => {
+          console.log("Usuários carregados:", res); // Verificação de debug
+          setUsuarios(res);
+        })
+        .catch((err) => console.error("Erro ao carregar usuários:", err));
     }
   }, [id, isCadastro]);
+
+  // Função de envio de cadastro de usuário
+  const handleSubmitCadastro = (e) => {
+    e.preventDefault();
+
+    // Validação de campos vazios
+    if (novoUsuario.usuario.trim() === "" || novoUsuario.senha.trim() === "") {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const usuarioExistente = usuarios.some(
+      (user) => user.usuario.toLowerCase() === novoUsuario.usuario.toLowerCase()
+    );
+
+    if (usuarioExistente) {
+      alert("Este nome de usuário já existe. Escolha outro.");
+      return;
+    }
+
+    // Se todas as validações forem bem-sucedidas, continuar com o envio
+    let metodo = id ? "put" : "post";
+
+    fetch(`http://localhost:5000/usuarios/${id ? id : ""}`, {
+      method: metodo,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(novoUsuario),
+    })
+      .then(() => {
+        alert("Cadastro realizado com sucesso !!!");
+        // Limpar os campos após o sucesso do envio
+        setNovoUsuario({
+          usuario: "",
+          senha: "",
+        });
+
+        navigate("/login");
+        window.location.reload(); // Atualizar a página
+
+        navigate("/login", { replace: true });
+      })
+      .catch((err) => console.error("Erro ao enviar cadastro:", err));
+  };
 
   // Alternar entre login e cadastro
   const toggleCadastro = () => {
@@ -103,10 +136,9 @@ const Login = () => {
               <p className="description description-primary">
                 Faça login com suas informações pessoais
               </p>
-
             </div>
 
-            <div class="second-column">
+            <div className="second-column">
               <form className="login-form" onSubmit={handleSubmitLogin}>
                 <span className="title title-second">Faça seu Login</span>
                 <div className="social-media">
@@ -129,31 +161,28 @@ const Login = () => {
                   </ul>
                 </div>
                 <div className="form2">
-                <label className="label-input" htmlFor="usuario">
-                  <i className="far fa-user icon-modify"></i>
-                  <input
-                    type="text"
-                    className="input-form"
-                    id="usuario"
-                    ref={usuario}
-                    placeholder="Usuário"
-                  />
-                </label>
-                
+                  <label className="label-input" htmlFor="usuario">
+                    <i className="far fa-user icon-modify"></i>
+                    <input
+                      type="text"
+                      className="input-form"
+                      id="usuario"
+                      ref={usuario}
+                      placeholder="Usuário"
+                    />
+                  </label>
 
-
-                <label className="label-input" htmlFor="usuario">
-                  <i className="fas fa-lock icon-modify"></i>
-                  <input
-                    type="password"
-                    className="input-form"
-                    id="senha"
-                    ref={senha}
-                    placeholder="Senha"
-                  />
-                </label>
+                  <label className="label-input" htmlFor="usuario">
+                    <i className="fas fa-lock icon-modify"></i>
+                    <input
+                      type="password"
+                      className="input-form"
+                      id="senha"
+                      ref={senha}
+                      placeholder="Senha"
+                    />
+                  </label>
                 </div>
-
 
                 <div className="login-btn">
                   <button className="btn btn-second" type="submit">
@@ -188,7 +217,6 @@ const Login = () => {
               <p className="description description-primary">
                 Cadastre-se aqui com suas informações
               </p>
-
             </div>
             <div className="second-column">
               <h2 className="title title-second">Criar conta</h2>
@@ -245,7 +273,9 @@ const Login = () => {
                     <span className="text1">Já possui conta?</span>
                   </li>
                   <li>
-                    <span onClick={toggleCadastro} className="link">Clique aqui para entrar</span>
+                    <span onClick={toggleCadastro} className="link">
+                      Clique aqui para entrar
+                    </span>
                   </li>
                 </ul>
               </form>
