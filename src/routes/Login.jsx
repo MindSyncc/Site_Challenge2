@@ -104,8 +104,8 @@ const Login = () => {
                 Faça login com suas informações pessoais
               </p>
               <button className="btn btn-second" id="loginButton">
-                  Entrar
-                </button>
+                Entrar
+              </button>
               <p className="description description-primary">
                 Não possui conta? Clique aqui para se cadastrar.
               </p>
