@@ -1,201 +1,243 @@
 import styled from "styled-components";
 
 export const PilotosStyle = styled.section`
-  #header {
-    background-color: black;
-  }
+  /* para que o conteúdo fique abaixo do banner */
+  position: relative;
+  z-index: 5;
+  padding-bottom: 30px;
+  background-color: rgb(28, 28, 28);
 
-  .nossos_carros {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #car-selector {
+  /* Estilos para o carrousel */
+  .slider {
+    width: 100%;
+    height: 100vh;
     position: relative;
-    display: flex;
-    align-items: center;
   }
 
-  #car-selector .passos {
-    font-size: 50px;
-    margin: 10px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #dd052b;
-    transition: all 0.3s;
-  }
-
-  #car-selector .passos:hover {
-    color: #af0423;
-  }
-
-  #car-selector #carImage {
-    width: 450px;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .nossos_carros h2 {
-    margin-top: 80px;
-    font-size: 50px;
-  }
-
-  .nossos_carros p {
-    font-size: 20px;
-    margin-bottom: 90px;
-  }
-
-  .nossos_carros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ajuste conforme necessário */
-  }
-
-  #car-selector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Espaço entre os itens */
-  }
-
-  .nossos_carros .selecao {
-    font-size: 20px;
-    margin: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #dd052b;
-    transition: all 0.3s;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  .nossos_carros .selecao:hover {
-    background-color: #af0423;
-    color: #e7e7e7;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-
-  @media screen and (max-width: 600px) {
-    .nossos_carros h2 {
-      font-size: 35px;
-    }
-    .nossos_carros p {
-      font-size: 20px;
-      margin: 10px;
-    }
-    #car-selector img {
-      width: 250px;
-    }
-    .nossos_carros .selecao {
-      font-size: 15px;
-    }
-    #car-selector .passos {
-      font-size: 30px;
-      margin: 0;
-    }
-  }
-
-  #backToTop {
-    visibility: hidden; /* Hidden by default */
-    opacity: 0;
-    transition: visibility 0s 0.3s, opacity 0.3s linear, all 0.3s; /* Transition effect */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    color: #0e0e0e; /* Text color */
-    background: none;
-    cursor: pointer; /* Add a mouse pointer on hover */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 45px; /* Increase font size */
-  }
-
-  #backToTop.show {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s, opacity 0.5s linear, all 0.3s;
-  }
-
-  #backToTop:hover {
-    color: #dd052b; /* Add a dark-grey background on hover */
-  }
-
-  @media screen and (max-width: 600px) {
-    #backToTop {
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 10px; /* Place the button 30px from the right */
-    }
-  }
-
-  .bi-arrow-right-circle-fill {
-    font-size: 30px;
-  }
-
-  .bi-arrow-left-circle-fill {
-    font-size: 30px;
-  }
-
-  .bi-arrow-up-circle-fill {
-    font-size: 30px;
-  }
-
-  .info-button {
-    font-size: 1.8rem;
-    background-color: #af0423;
-    border-radius: 50px;
-    margin: 0 0 5% 0;
-    transition: transform 0.3s ease;
-    color: #fff;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-  }
-
-  .info-button:hover{
-    background-color: #48111BFF;
-  }
-
-  #pilotInfo {
+  .slider .carrousel {
     position: absolute;
-    bottom: -45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    border: 2px solid black;
-    border-radius: 10px;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
-    animation: scale-display 0.5s forwards;
+    height: 80vh;
+    overflow-y: hidden;
+    transition: opacity 0.2s ease-in-out;
+    background-color:#0e0e0e;
   }
 
-  .hidden {
-    display: none;
+  .slider .carrousel.active {
+    opacity: 1;
   }
 
-  @keyframes scale-display {
-    0% {
-      opacity: 0;
+  .slider .carrousel img {
+    width: 35%;
+    object-fit: contain;
+  }
+
+  .texto-inicio p {
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  }
+
+  #card-wrapper {
+    padding: 20px;
+  }
+
+  .box-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+  .box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+  }
+
+  #card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .texto {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 60%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    transition: height 0.5s;
+  }
+  .texto h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  .texto a {
+    margin-top: 10px;
+    color: #262626;
+    text-decoration: none;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+  }
+  .box:hover .texto {
+    height: 100%;
+  }
+
+  /* Estilos para o pop-up */
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+  }
+
+  .popup-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .openPopupBtn {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .openPopupBtn:hover {
+    background-color: #8f6161;
+  }
+
+  .pop-up-text {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    min-height: 20vw;
+    max-width: 600px;
+  }
+
+  .slide {
+    object-fit: cover;
+    width: 30%;
+    min-width: 100%;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .dots {
+    display: flex;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
     }
-
-    100% {
+    to {
       opacity: 1;
     }
   }
 
-  .lower {
-    transform: translateY(200%);
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
   }
 
-  .button-pilotos {
-    text-align: center;
+  @media (max-width: 768px) {
+    .box-area {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 480px) {
+    .box-area {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `;

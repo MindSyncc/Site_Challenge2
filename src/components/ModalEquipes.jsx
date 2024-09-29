@@ -5,6 +5,7 @@ const ModalEquipes = ({
   initialIsOpen,
   nameEquipe,
   descricao,
+  pontuacao,
   equipeId,
   equipeImages,
 }) => {
@@ -66,6 +67,7 @@ const ModalEquipes = ({
             </div>
 
             <p className="pop-up-text">{descricao}</p>
+            <p className="pop-up-text">{pontuacao}</p>
           </div>
         </div>
       )}

@@ -1,0 +1,145 @@
+[
+  {
+    "equipeId": "andretti",
+    "nameEquipe": "Buemi",
+    "descricao": "Sébastien Buemi - Team Envision Racing",
+    "pontuacao": "Pontuação na temporada - 53 pontos",
+    "equipeImages": ["src/assets/img/pilotos/buemi.png"]
+  },
+
+  {
+    "equipeId": "cupra",
+    "nameEquipe": "Dacosta",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/dacosta.png"]
+  },
+
+  {
+    "equipeId": "ds",
+    "nameEquipe": "Dennis",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/dennis.png"]
+  },
+
+  {
+    "equipeId": "envision",
+    "nameEquipe": "Digrassi",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/digrassi.png"]
+  },
+
+  {
+    "equipeId": "ert",
+    "nameEquipe": "Fenestraz",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/fenestraz.png"]
+  },
+
+  {
+    "equipeId": "jaguar",
+    "nameEquipe": "Frijns",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/frijns.png"]
+  },
+
+  {
+    "equipeId": "mahindra",
+    "nameEquipe": "Gunther",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/gunther.png"]
+  },
+
+  {
+    "equipeId": "maserati",
+    "nameEquipe": "Hughes",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/hughes.png"]
+  },
+
+  {
+    "equipeId": "mclaren",
+    "nameEquipe": "Lotterer",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/lotterer2.png"]
+  },
+
+  {
+    "equipeId": "nissan",
+    "nameEquipe": "Evans",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/mitch-evans.png"]
+  },
+
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Mortara",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/mortara.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Muller",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/muller.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Nato",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/nato.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Cassidy",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/nick-cassidy.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Rast",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/rast2.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Rowland",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/rowland.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Bird",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/sam-bird.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Sette-Câmara",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/sette-camara.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Ticktum",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/ticktum.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Vandoorne",
+    "descricao": "",
+    "equipeImages": ["src/assets/img/pilotos/vandoorne.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Vergne",
+    "descricao": "lorem",
+    "equipeImages": ["src/assets/img/pilotos/vergne.png"]
+  },
+  {
+    "equipeId": "porsche",
+    "nameEquipe": "Wehrlein",
+    "descricao": "lorem",
+    "equipeImages": ["src/assets/img/pilotos/wehrlein.png"]
+  }
+]
