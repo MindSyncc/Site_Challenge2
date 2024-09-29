@@ -17,7 +17,7 @@ const RegrasFormulaE = () => {
 
   return (
     <RegrasStyle className="margin-bottom-100">
-      <div>
+      <main>
         <h1 className="regras-h1">Regras da Fórmula E</h1>
 
         <section>
@@ -26,7 +26,7 @@ const RegrasFormulaE = () => {
             O Campeonato Mundial de Fórmula E da ABB FIA possui dois títulos
             separados: um para os pilotos e outro para as equipes.
           </p>
-          <ul>
+          <ul className="rules-list">
             <li>
               <strong>Campeonato de Pilotos:</strong> Ganha o piloto que
               acumular mais pontos ao longo da temporada.
@@ -134,7 +134,7 @@ const RegrasFormulaE = () => {
             acumular ao menos 20 pontos no sistema de pontos da FIA.
           </p>
         </section>
-      </div>
+      </main>
     </RegrasStyle>
   );
 };

@@ -14,13 +14,31 @@ const pilotos = [
   { id: 9, nome: 'Lotterer' },
   { id: 10, nome: 'Evans' },
   { id: 11, nome: 'Mortara' },
-  { id: 12, nome: 'Cassidy' },
+  { id: 12, nome: 'Muller' },
+  { id: 13, nome: 'Nato' },
+  { id: 14, nome: 'Cassidy' },
+  { id: 15, nome: 'Rast' },
+  { id: 16, nome: 'Rowland' },
+  { id: 17, nome: 'Bird' },
+  { id: 18, nome: 'Sette-Câmara' },
+  { id: 19, nome: 'Ticktum' },
+  { id: 20, nome: 'Vandoorne' },
+  { id: 21, nome: 'Vergne' },
+  { id: 22, nome: 'Wehrlein' },
 ];
 
 const equipes = [
-  { id: 1, nome: 'Andretti' },
-  { id: 2, nome: 'Cupra' },
-  { id: 3, nome: 'DS' },
+  { id: 1, nome: 'Avalanche Andretti Formula E' },
+  { id: 2, nome: 'ABT Cupra Formula E Team' },
+  { id: 3, nome: 'DS Penske' },
+  { id: 4, nome: 'Jaguar TCS Racing' },
+  { id: 5, nome: 'Porsche Formula E Team' },
+  { id: 6, nome: 'Nissan Formula E Team' },
+  { id: 7, nome: 'Maserati MSG Racing' },
+  { id: 8, nome: 'Mahindra Racing' },
+  { id: 9, nome: 'TAG Heuer Porsche Formula E Team' },
+  { id: 10, nome: 'Envision Racing' },
+  { id: 11, nome: 'NEOM McLaren Formula E Team' },
 ];
 
 const Jogo = () => {

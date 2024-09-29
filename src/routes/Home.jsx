@@ -42,6 +42,7 @@ const Home = () => {
           coloca você no coração da Fórmula E. Quem será o campeão?
         </p>
       </div>
+      
 
       <section className="section-apresentacao">
         <h1 className="header-apresentacao">Nossos Diferenciais</h1>

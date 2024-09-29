@@ -1,9 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { RegrasStyle } from "../css/RegrasStyle";
+import bateria from "../assets/img/home/secao/bateria-potencia.png";
+import regras from "../assets/img/home/secao/jogos.webp";
 
 const RegrasFormulaE = () => {
-  const navigate = useNavigate(); // Para redirecionamento
+  const navigate = useNavigate();
 
   // Funções para redirecionar
   const handleRegrasFormulaE = () => {
@@ -16,18 +18,19 @@ const RegrasFormulaE = () => {
 
   return (
     <RegrasStyle>
-      <div>
+      <main>
         <h1 className="regras-h1">Regras de Corrida</h1>
-
-        <div className="button-container">
-          <button className="botao-regras" onClick={handleRegrasFormulaE}>
-            Regras da Fórmula E
-          </button>
-          <button className="botao-regras" onClick={handleRegrasEMasters}>
-            Regras do eMasters
-          </button>
+        <div className="rules-container">
+          <div className="rule-item" onClick={handleRegrasFormulaE}>
+            <img src={bateria} alt="Regras da Fórmula E" />
+            <p className="text-item">Regras da Fórmula E</p>
+          </div>
+          <div className="rule-item" onClick={handleRegrasEMasters}>
+            <img src={regras} alt="Regras do eMasters" />
+            <p className="text-item">Regras do eMasters</p>
+          </div>
         </div>
-      </div>
+      </main>
     </RegrasStyle>
   );
 };
