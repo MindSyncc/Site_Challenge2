@@ -9,11 +9,12 @@ export const LoginStyle = styled.section`
     align-items: center;
     height: 100vh;
     background: #c4c4c4;
+   
     
 
 }
 .content {
-    background-color:#D1E2F6FF;
+    background-color: white;
     border-radius: 15px;
     width: 960px;
     height: 70%;
