@@ -1,4 +1,5 @@
 import { RegrasStyle } from "../css/RegrasStyle";
+
 import seta from "../assets/img/home/secao/seta.png";
 import imgSustentabilidade from "../assets/img/home/secao/sustentabilidade.webp";
 import imgBateria from "../assets/img/home/secao/bateria-potencia.avif";
@@ -18,13 +19,19 @@ const RegrasFormulaE = () => {
   return (
     <RegrasStyle className="margin-bottom-100">
       <main>
+       
         <h1 className="regras-h1">Regras do E-Masters</h1>
+
+        <section>
         <p>
           Escolha 10 pilotos e uma equipe para competir nas duas fases: Corrida
           Principal e Corrida Classificatória. A pontuação será determinada pela
           posição final, desempenho da equipe, voltas rápidas, ultrapassagens e
           outros fatores.
         </p>
+        </section>
+
+        <section>
         <h2>--- Corrida Principal ---</h2>
         <ul className="rules-list">
           <li>
@@ -58,7 +65,9 @@ const RegrasFormulaE = () => {
             cada ultrapassagem sofrida tira 0,2 pontos.
           </li>
         </ul>
+        </section>
 
+        <section>
         <h2>--- Corrida Classificatória ---</h2>
 
         <p>
@@ -77,7 +86,9 @@ const RegrasFormulaE = () => {
           ultrapassagem realizada dá 0,5 pontos, e cada ultrapassagem sofrida
           tira 0,2 pontos.
         </p>
+        </section>
       </main>
+     
     </RegrasStyle>
   );
 };
