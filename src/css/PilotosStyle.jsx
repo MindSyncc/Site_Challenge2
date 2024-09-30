@@ -171,10 +171,10 @@ export const PilotosStyle = styled.section`
 
 
 .popup-content img {
-  max-width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+  max-width: 40%; 
   height: auto;
   object-fit: contain;
-  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+  margin-right: 20px; 
 }
 
 .popup-content {
