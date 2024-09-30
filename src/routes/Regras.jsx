@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { RegrasStyle } from "../css/RegrasStyle";
-import bateria from "../assets/img/home/secao/bateria-potencia.png";
+import bateria from "../assets/img/home/secao/recupera-energia.jpg";
 import regras from "../assets/img/home/secao/jogos.webp";
 
 const RegrasFormulaE = () => {
