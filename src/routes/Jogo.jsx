@@ -41,28 +41,28 @@ const pilotos = [
 const equipes = [
   {
     id: 1,
-    nome: "Avalanche Andretti Formula E",
+    nome: "Andretti",
     imagem: "src/assets/img/equipes/andretti/andretti.jpg",
   },
   {
     id: 2,
-    nome: "Cupra Formula E Team",
+    nome: "Cupra",
     imagem: "src/assets/img/equipes/cupra/cupra.jpg",
   },
   { id: 3, nome: "DSPenske", imagem: "src/assets/img/equipes/ds/ds.jpg" },
   {
     id: 4,
+    nome: "ERT",
+    imagem: "src/assets/img/equipes/ert/ert.jpg",
+  },
+  {
+    id: 5,
     nome: "Jaguar TCS Racing",
     imagem: "src/assets/img/equipes/jaguar/jaguar.jpg",
   },
   {
-    id: 5,
-    nome: "Porsche Formula E Team",
-    imagem: "src/assets/img/equipes/porsche/porsche.jpg",
-  },
-  {
     id: 6,
-    nome: "Nissan Formula E Team",
+    nome: "Nissan",
     imagem: "src/assets/img/equipes/nissan/nissan.jpg",
   },
   {
@@ -77,7 +77,7 @@ const equipes = [
   },
   {
     id: 9,
-    nome: "TAG Heuer Porsche Formula E Team",
+    nome: "Porsche",
     imagem: "src/assets/img/equipes/porsche/porsche.jpg",
   },
   {
@@ -87,7 +87,7 @@ const equipes = [
   },
   {
     id: 11,
-    nome: "NEOM McLaren Formula E Team",
+    nome: "McLaren",
     imagem: "src/assets/img/equipes/mclaren/mclaren.jpg",
   },
 ];
@@ -242,6 +242,15 @@ const Jogo = () => {
   // Função para calcular os pontos
   const calcularPontuacao = () => {
     console.log("Função calcularPontuacao foi chamada");
+    if (selectedPilotos.length !== 10) {
+      alert("Por favor, selecione 10 pilotos.");
+      return;
+    }
+  
+    if (!selectedEquipe) {
+      alert("Por favor, selecione uma equipe.");
+      return;
+    }
     let totalCorridaPrincipal = 0;
     let totalCorridaClassificatoria = 0;
     let pontosEquipePrincipal = 0;
@@ -565,10 +574,10 @@ const Jogo = () => {
 
           <div className="div-pilot">
             <p className="choice">Escolha uma equipe</p>
-            <div className="section-pilot">
+            <div className="section-car">
               {equipes.map((equipe) => (
                 <button
-                  className="card-button"
+                  className="card-button-car"
                   key={equipe.id}
                   onClick={() => handleEquipeSelect(equipe)}
                   style={{

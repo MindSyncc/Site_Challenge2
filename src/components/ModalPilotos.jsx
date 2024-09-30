@@ -1,5 +1,4 @@
 import { useState } from "react";
-import equipes from "../../lista-equipes.json";
 
 const ModalPilotos = ({
   initialIsOpen,

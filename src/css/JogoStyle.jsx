@@ -17,6 +17,7 @@ export const JogoStyle = styled.section`
     padding: 20px;
   }
 
+
   .card-button {
     flex-direction: column;
     align-items: center;
@@ -35,6 +36,33 @@ export const JogoStyle = styled.section`
 
   .card-button img {
     width: 70px; /* Defina o tamanho da imagem */
+    height: auto;
+    margin-bottom: 10px;
+    
+  }
+
+  .card-button-car{
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vh; /* Largura fixa para o botão do piloto */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: black;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center; /* Centraliza o texto */
+    padding-bottom: 10px;
+  
+  }
+
+  .card-button-car img{
+ /* Defina o tamanho da imagem */
+    width: 30vh;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
     height: auto;
     margin-bottom: 10px;
   }
