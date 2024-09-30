@@ -8,7 +8,6 @@ import Calendario from "./routes/Calendario.jsx";
 import Pilotos from "./routes/Pilotos.jsx";
 import Classificacao from "./routes/Classificacao.jsx";
 import Equipes from "./routes/Equipes.jsx";
-import Login from "./routes/Login.jsx";
 import Regras from "./routes/Regras.jsx";
 import Noticias from "./routes/Noticias.jsx";
 import Jogo from "./routes/Jogo.jsx";
@@ -34,7 +33,6 @@ const router = createBrowserRouter([
       { path: "/pilotos", element: <Pilotos /> },
       { path: "/classificação", element: <Classificacao /> },
       { path: "/equipes", element: <Equipes /> },
-      { path: "/login", element: <Login /> },
       { path: "/regras", element: <Regras /> },
       { path: "/notícias", element: <Noticias /> },
       { path: "/jogo", element: <Jogo /> },

@@ -95,7 +95,6 @@ const Header = () => {
                 "/equipes",
                 "/notícias",
                 "/jogo",
-                "/login",
               ].map((path, index) => (
                 <li
                   className="navlink"
