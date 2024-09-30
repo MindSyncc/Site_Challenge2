@@ -94,7 +94,9 @@ export const JogoStyle = styled.section`
     padding:10px 0;
     }
 
-
+    .text1{
+    line-height: 3rem;
+}
 
 
 
