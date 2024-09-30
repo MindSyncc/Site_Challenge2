@@ -65,4 +65,7 @@ export const JogoStyle = styled.section`
     background-color: #00001f;
     color: white;
   }
+    .result-game strong, .result-game p, .result-game h3, .result-game h4{
+    padding:10px 0;
+    }
 `;
