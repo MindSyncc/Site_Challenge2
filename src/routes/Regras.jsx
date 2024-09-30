@@ -27,7 +27,7 @@ const RegrasFormulaE = () => {
           </div>
           <div className="rule-item" onClick={handleRegrasEMasters}>
             <img src={regras} alt="Regras do eMasters" />
-            <p className="text-item">Regras do eMasters</p>
+            <p className="text-item">Regras do E-Masters</p>
           </div>
         </div>
       </main>

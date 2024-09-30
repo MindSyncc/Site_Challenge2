@@ -74,6 +74,7 @@ export const RegrasStyle = styled.section`
   ul li {
     margin-bottom: 10px;
     font-size: 2rem;
+    margin-left: 30px;
   }
 
   section {
