@@ -46,6 +46,7 @@ export const HomeStyle = styled.section`
   font-size: 2.5rem;
   text-align: center;
   max-width: 800px;
+  margin-top: 50px;
   text-shadow: -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
   line-height: 4rem;
   
