@@ -3,7 +3,7 @@ import corrida_alemanha from "../assets/img/home/secao/img1-alemanha-fe.jpeg";
 import corrida_china from "../assets/img/home/secao/img2-china-fe.webp";
 import corrida_usa from "../assets/img/home/secao/img3-usa.jpeg";
 import corrida_uk from "../assets/img/home/secao/img4-uk-fe.jpg";
-import car from "../assets/img/home/carrousel/car.jpg";
+import car from "../assets/img/home/secao/recupera-energia.jpg";
 import automobile from "../assets/img/home/carrousel/automobile2.jpg";
 
 export const HomeStyle = styled.section`
@@ -24,14 +24,33 @@ export const HomeStyle = styled.section`
     align-items: center;
     justify-content: center;
   }
-  #banner-texto {
-    font-size: 3.5rem;
-    text-align: center;
-    max-width: 800px;
-    color: white;
-    text-shadow:   -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
-    font-weight:bold;
-  }
+
+
+
+.banner-box {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; 
+  border-radius: 10px; 
+}
+
+#banner-texto {
+  position: relative;
+  z-index: 2;
+  color: white; 
+  padding: 20px; 
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 800px;
+  text-shadow: -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
+  line-height: 4rem;
+  
+}
+
 
   .section-apresentacao {
     padding: 80px 100px;
