@@ -115,6 +115,7 @@ export const HeaderStyle = styled.section`
     font-size: 1.8rem;
   }
 
+ 
   #login a {
     color: #17aa40;
   }

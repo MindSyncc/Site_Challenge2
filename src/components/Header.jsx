@@ -89,11 +89,11 @@ const Header = () => {
             <ul className="nav-list" ref={navListRef}>
               {[
                 "/regras",
-                "/calendario",
+                "/calendário",
                 "/pilotos",
-                "/classificacao",
+                "/classificação",
                 "/equipes",
-                "/noticias",
+                "/notícias",
                 "/jogo",
                 "/login",
               ].map((path, index) => (

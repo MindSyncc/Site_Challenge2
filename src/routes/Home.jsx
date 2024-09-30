@@ -155,7 +155,7 @@ const Home = () => {
               <p className="desc">Berlim</p>
               <p className="desc">Berlim E-Prix I</p>
               <div className="container-botao">
-                <Link to={"/calendario"}>
+                <Link to={"/calendário"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
@@ -178,7 +178,7 @@ const Home = () => {
               <p className="desc">Xangai</p>
               <p className="desc">Xangai E-Prix II</p>
               <div className="container-botao">
-                <Link to={"/calendario"}>
+                <Link to={"/calendário"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
@@ -201,7 +201,7 @@ const Home = () => {
               <p className="desc">Portland</p>
               <p className="desc">Portland E-Prix I</p>
               <div className="container-botao">
-                <Link to={"/calendario"}>
+                <Link to={"/calendário"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
@@ -224,7 +224,7 @@ const Home = () => {
               <p className="desc">Londres</p>
               <p className="desc">Londres E-Prix I</p>
               <div className="container-botao">
-                <Link to={"/calendario"}>
+                <Link to={"/calendário"}>
                   <button id="button-calendario" type="button">
                     Calendário
                   </button>
@@ -348,7 +348,7 @@ const Home = () => {
         </table>
       </section>
       <div className="container-botao">
-        <Link to="/classificacao">
+        <Link to="/classificação">
           <button id="button-classificacao" type="button">
             Clique aqui e confira a classificação completa
           </button>
@@ -438,7 +438,7 @@ const Home = () => {
         </div>
       </section>
       <div class="container-botao-noticias">
-        <Link to="/noticias">
+        <Link to="/notícias">
           <a id="botao-noticias" href="noticias.html" class="link-noticias">
             Ver mais notícias relacionadas &rarr;
           </a>
