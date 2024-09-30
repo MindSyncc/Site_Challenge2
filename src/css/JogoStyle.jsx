@@ -52,13 +52,14 @@ export const JogoStyle = styled.section`
     border: none;
     background-color: black;
     color: white;
-    font-weight: lighter;
     padding: 10px;
     text-align: center;
     display: block;
     margin: 20px auto;
     width: 200px; 
+    font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
   }
 
   .button-game:hover {
