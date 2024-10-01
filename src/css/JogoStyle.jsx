@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const JogoStyle = styled.section`
-
-    .result-game{
-    text-align:left;
+  * {
+    font-size: 2rem;
+  }
+    .list-social-media i{
+      font-size:1.2rem;
     }
+
+  .result-game {
+    text-align: left;
+  }
 
   .div-pilot .choice {
     text-align: center;
@@ -16,7 +22,6 @@ export const JogoStyle = styled.section`
     flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
     padding: 20px;
   }
-
 
   .card-button {
     flex-direction: column;
@@ -38,11 +43,10 @@ export const JogoStyle = styled.section`
     width: 70px; /* Defina o tamanho da imagem */
     height: auto;
     margin-bottom: 10px;
-    
   }
 
-  .card-button-car{
-  flex-direction: column;
+  .card-button-car {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 30vh; /* Largura fixa para o botão do piloto */
@@ -55,14 +59,13 @@ export const JogoStyle = styled.section`
     font-size: 1.5rem;
     text-align: center; /* Centraliza o texto */
     padding-bottom: 10px;
-  
   }
 
-  .card-button-car img{
- /* Defina o tamanho da imagem */
+  .card-button-car img {
+    /* Defina o tamanho da imagem */
     width: 30vh;
-    border-top-right-radius:8px;
-    border-top-left-radius:8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     height: auto;
     margin-bottom: 10px;
   }
@@ -80,7 +83,7 @@ export const JogoStyle = styled.section`
     text-align: center;
     display: block;
     margin: 20px auto;
-    width: 200px; 
+    width: 200px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
@@ -90,26 +93,18 @@ export const JogoStyle = styled.section`
     background-color: #00001f;
     color: white;
   }
-    .result-game strong, .result-game p, .result-game h3, .result-game h4{
-    padding:10px 0;
-    }
+  .result-game strong,
+  .result-game p,
+  .result-game h3,
+  .result-game h4 {
+    padding: 10px 0;
+  }
 
-    .text1{
+  .text1 {
     line-height: 3rem;
-}
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-    /*Login Style*/ 
+  /*Login Style*/
 
   ul li {
     list-style: none;
@@ -374,14 +369,12 @@ export const JogoStyle = styled.section`
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     animation: slidein 1.3s;
-    /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
   }
 
   .sign-up-js .content::before {
     animation: slideout 1.3s;
-    /*MODIFIQUEI DE 3s PARA 1.3s*/
 
     z-index: 12;
   }
@@ -404,14 +397,12 @@ export const JogoStyle = styled.section`
     z-index: -1;
     position: relative;
     animation: deslocamentoEsq 1.3s;
-    /*MODIFIQUEI DE 3s PARA 1.3s*/
   }
 
   .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
     animation: deslocamentoDir 1.3s;
-    /*MODIFIQUEI DE 3s PARA 1.3s*/
   }
 
   /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -426,13 +417,11 @@ export const JogoStyle = styled.section`
     25% {
       left: -80px;
       opacity: 0.5;
-      /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
 
     50% {
       left: -100px;
       opacity: 0.2;
-      /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
 
     to {
@@ -450,13 +439,10 @@ export const JogoStyle = styled.section`
 
     25% {
       left: 80px;
-      /* z-index: 12;  NÃO HÁ NECESSIDADE*/
     }
 
     50% {
       left: 100px;
-      /* z-index: 12; NÃO HÁ NECESSIDADE*/
-      /* background-color: yellow;  Exemplo que dei no vídeo*/
     }
 
     to {
@@ -568,13 +554,11 @@ export const JogoStyle = styled.section`
       25% {
         top: -80px;
         opacity: 0.5;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
       }
 
       50% {
         top: -100px;
         opacity: 0.2;
-        /* z-index: 12; NÃO HÁ NECESSIDADE */
       }
 
       to {
@@ -592,13 +576,10 @@ export const JogoStyle = styled.section`
 
       25% {
         top: 80px;
-        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
       }
 
       50% {
         top: 100px;
-        /* z-index: 12; NÃO HÁ NECESSIDADE*/
-        /* background-color: yellow;  Exemplo que dei no vídeo*/
       }
 
       to {
@@ -661,14 +642,22 @@ export const JogoStyle = styled.section`
       }
     }
   }
-
-  @media screen and (max-width: 740px) {
+  @media (max-width: 480px) {
+    .utilidades {
+    margin:0;
+  }
+}
+  @media(max-width: 740px) {
     .form {
       width: 50%;
     }
+    .utilidades {
+    margin:0px;
+  }
+    
   }
 
-  @media screen and (max-width: 425px) {
+  @media (max-width: 425px) {
     .form {
       width: 100%;
     }
@@ -720,10 +709,7 @@ export const JogoStyle = styled.section`
     justify-content: center;
   }
 
-  .utilidades {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+
   .text1 {
     color: #555;
     font-size: 1.5rem;
@@ -736,5 +722,4 @@ export const JogoStyle = styled.section`
   .text2 {
     color: blue;
   }
-
 `;

@@ -1,6 +1,5 @@
 import { NoticiasStyle } from "../css/NoticiasStyle";
 import React from "react";
-import logo from "../assets/img/logo/logo.jpg";
 import news1 from "../assets/img/home/secao/news1.webp";
 import news2 from "../assets/img/home/secao/news2.png";
 import news3 from "../assets/img/home/secao/news3.webp";

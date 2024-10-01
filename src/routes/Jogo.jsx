@@ -196,10 +196,10 @@ const Jogo = () => {
           senha: "",
         });
 
-        navigate("/login");
+        navigate("/jogo");
         window.location.reload(); // Atualizar a página
 
-        navigate("/login", { replace: true });
+        navigate("/jogo", { replace: true });
       })
       .catch((err) => console.error("Erro ao enviar cadastro:", err));
   };

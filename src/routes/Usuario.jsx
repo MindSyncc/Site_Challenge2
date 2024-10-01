@@ -1,7 +1,6 @@
 import { MdCancel } from "react-icons/md";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ListarUsuarios from "./ListarUsuarios";
 
 const Usuario = () => {
   /*Hook-useParams- é utilizado para receber paramentros(codigo) pela rota */
@@ -46,7 +45,7 @@ const Usuario = () => {
       //promises
     }).then(() => {
       //direciona para o componente
-      navigate("/login");
+      navigate("/jogo");
     });
   };
 
@@ -89,7 +88,7 @@ const Usuario = () => {
 
         <button type="submit">Cadastrar</button>
 
-        <Link to="/login">
+        <Link to="/jogo">
           {/* Chamando o icone do react  */}
           <MdCancel />
         </Link>

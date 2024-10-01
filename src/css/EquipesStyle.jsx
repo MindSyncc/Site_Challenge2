@@ -234,6 +234,10 @@ export const EquipesStyle = styled.section`
     .box-area {
       grid-template-columns: repeat(2, 1fr);
     }
+    .pop-up-text {
+    font-size: 1rem;
+  }
+
   }
   @media (max-width: 480px) {
     .box-area {

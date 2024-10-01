@@ -24,7 +24,7 @@ export const PilotosStyle = styled.section`
     height: 80vh;
     overflow-y: hidden;
     transition: opacity 0.2s ease-in-out;
-    background-color:#0e0e0e;
+    background-color: #0e0e0e;
   }
 
   .slider .carrousel.active {
@@ -108,159 +108,108 @@ export const PilotosStyle = styled.section`
     height: 100%;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
   /* Estilos para o pop-up */
- /* Estilos para o pop-up */
-.popup {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10000;
-}
+  /* Estilos para o pop-up */
+  .popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+  }
 
-.popup-content {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-  width: 10%;
-  max-height: 90vh;
-  overflow-y: auto;
-  display: flex; /* Adiciona flexbox para alinhar itens em linha */
-  justify-content: flex-start; /* Garante que os itens comecem do início */
-  align-items: flex-start; /* Alinha os itens no topo */
-  
-}
+  .popup-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 10%;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex; /* Adiciona flexbox para alinhar itens em linha */
+    justify-content: flex-start; /* Garante que os itens comecem do início */
+    align-items: flex-start; /* Alinha os itens no topo */
+  }
 
-/* Diminuir o tamanho da imagem no modal */
-.popup-content img {
-  max-width: 50%; /* Ajuste o tamanho para 50% da largura disponível */
-  height: auto; /* Mantém a proporção da imagem */
-  object-fit: contain;
-  margin-top: 20px; /* Adiciona espaçamento superior */
-}
+  /* Diminuir o tamanho da imagem no modal */
+  .popup-content img {
+    max-width: 50%; /* Ajuste o tamanho para 50% da largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain;
+    margin-top: 20px; /* Adiciona espaçamento superior */
+  }
 
+  .popup-content img {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px;
+  }
 
+  .popup-content {
+    background-color: #120f28;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex; /* Adiciona flexbox para alinhar itens em linha */
+    justify-content: flex-start; /* Garante que os itens comecem do início */
+    align-items: flex-start; /* Alinha os itens no topo */
+  }
 
+  .popup-content img {
+    max-width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+  }
 
-.popup-content img {
-  max-width: 40%; 
-  height: auto;
-  object-fit: contain;
-  margin-right: 20px; 
-}
+  .pop-up-text {
+    font-size: 1.2rem;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
+  }
 
-.popup-content {
-  background-color: #29244C;
-  color: black;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-  width: 90%;
-  max-height: 90vh;
-  overflow-y: auto;
-  display: flex; /* Adiciona flexbox para alinhar itens em linha */
-  justify-content: flex-start; /* Garante que os itens comecem do início */
-  align-items: flex-start; /* Alinha os itens no topo */
-}
+  /* Botão de fechar */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
 
-.popup-content img {
-  max-width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
-  height: auto;
-  object-fit: contain;
-  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
-}
+  .openPopupBtn {
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
 
-.pop-up-text {
-  font-size: 1.2rem;
-  text-align: left; /* Garante que o texto fique alinhado à esquerda */
-  flex-grow: 1; /* Faz com que o texto ocupe o espaço restante */
-}
+  .openPopupBtn:hover {
+    background-color: #8f6161;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Botão de fechar */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.openPopupBtn {
-  background-color: #fff;
-  color: #000;
-  border-radius: 50px;
-  padding: 10px;
-  border: none;
-  margin-top: 10px;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-.openPopupBtn:hover {
-  background-color: #8f6161;
-}
-
-.pop-up-text {
-  margin-bottom: 20px;
-  font-size: 1.3rem;
-  margin-top: 30px;
-}
-
+  .pop-up-text {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    margin-top: 30px;
+  }
 
   .slideshow-container {
     position: relative;
@@ -274,7 +223,6 @@ export const PilotosStyle = styled.section`
     width: 30%;
     min-width: 100%;
   }
-    
 
   .numbertext {
     color: #f2f2f2;
@@ -334,6 +282,14 @@ export const PilotosStyle = styled.section`
     .box-area {
       grid-template-columns: repeat(2, 1fr);
     }
+    .openPopupBtn {
+      border-radius: 50px;
+      padding: 4px;
+      border: none;
+      margin-top: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
   }
   @media (max-width: 480px) {
     .box-area {
@@ -342,39 +298,36 @@ export const PilotosStyle = styled.section`
   }
 
   .pontuacoes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
 
-.pontuacao-quadrado {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  height: 80px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+  .pontuacao-quadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #20163a;
+    border: 0.5px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
-.rodada-titulo {
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
+  .rodada-titulo {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 
-.pontuacao-texto {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-
-
+  .pontuacao-texto {
+    font-size: 16px;
+    font-weight: normal;
+  }
 `;

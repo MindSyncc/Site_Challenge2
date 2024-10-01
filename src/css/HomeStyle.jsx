@@ -97,7 +97,7 @@ export const HomeStyle = styled.section`
       font-size: 3.2rem;
     }
 
-    .texto-apresentacao {
+    #banner-texto {
       font-size: 1.6rem;
     }
 
@@ -817,7 +817,7 @@ export const HomeStyle = styled.section`
     }
 
     .secao button {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -1027,7 +1027,11 @@ export const HomeStyle = styled.section`
     }
     .container-botao-noticias {
       text-align: center;
-      margin-right: 100px;
+    }
+    .container-botao-noticias a{
+      margin:0;
+      padding:20px;
+      text-align: center;
     }
   }
 
