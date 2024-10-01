@@ -35,24 +35,24 @@ const ModalPilotos = ({
             </span>
 
             <div>
-                <div className="slideshow-container">
-                  {equipeImages.map((image, index) => {
-                    return (
-                      <div key={index} className="mySlides fade">
-                        <div
-                          className={slide === index ? "visible" : "non-visible"}
-                        >{`${index + 1} / 4`}</div>
-                        <img
-                          src={image}
-                          className={slide === index ? "slide" : "slide-hidden"}
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-                <br />
-                <p className="pop-up-text">{descricao}</p>
-                <p className="pop-up-text">{pontuacao}</p>
+              <div className="slideshow-container">
+                {equipeImages.map((image, index) => {
+                  return (
+                    <div key={index} className="mySlides fade">
+                      <div
+                        className={slide === index ? "visible" : "non-visible"}
+                      >{`${index + 1} / 4`}</div>
+                      <img
+                        src={image}
+                        className={slide === index ? "slide" : "slide-hidden"}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+              <br />
+              <p className="pop-up-text">{descricao}</p>
+              <p className="pop-up-text">{pontuacao}</p>
             </div>
 
             {/* Exibe a pontuação de cada rodada em quadradinhos */}

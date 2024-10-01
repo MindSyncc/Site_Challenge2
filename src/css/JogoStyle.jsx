@@ -4,9 +4,9 @@ export const JogoStyle = styled.section`
   * {
     font-size: 2rem;
   }
-    .list-social-media i{
-      font-size:1.2rem;
-    }
+  .list-social-media i {
+    font-size: 1.2rem;
+  }
 
   .result-game {
     text-align: left;
@@ -644,17 +644,16 @@ export const JogoStyle = styled.section`
   }
   @media (max-width: 480px) {
     .utilidades {
-    margin:0;
+      margin: 0;
+    }
   }
-}
-  @media(max-width: 740px) {
+  @media (max-width: 740px) {
     .form {
       width: 50%;
     }
     .utilidades {
-    margin:0px;
-  }
-    
+      margin: 0px;
+    }
   }
 
   @media (max-width: 425px) {
@@ -708,7 +707,6 @@ export const JogoStyle = styled.section`
     align-items: center;
     justify-content: center;
   }
-
 
   .text1 {
     color: #555;

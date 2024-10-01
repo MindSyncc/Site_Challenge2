@@ -235,15 +235,12 @@ export const EquipesStyle = styled.section`
       grid-template-columns: repeat(2, 1fr);
     }
     .pop-up-text {
-    font-size: 1rem;
-  }
-
+      font-size: 1rem;
+    }
   }
   @media (max-width: 480px) {
     .box-area {
       grid-template-columns: repeat(1, 1fr);
     }
   }
-
-  
 `;

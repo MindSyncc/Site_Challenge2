@@ -75,7 +75,7 @@ const Header = () => {
           <div className="logo-container">
             <Link to={"/home"}>
               <img src={logo} alt="Formula E Logo" id="logo" />
-              
+
               <span id="e">E-</span>
               <span id="formula">Masters</span>
             </Link>

@@ -30,11 +30,7 @@ const Home = () => {
     };
   }, []);
 
-  return (
-    <HomeStyle className="margin-bottom-100">
-      {/* Your existing JSX code here */}
-    </HomeStyle>
-  );
+  return <HomeStyle className="margin-bottom-100"></HomeStyle>;
 };
 
 export default Home;

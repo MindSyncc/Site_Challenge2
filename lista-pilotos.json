@@ -156,7 +156,9 @@
     "nameEquipe": "Vandoorne",
     "descricao": "",
     "pontuacao": "Pontuação na temporada - 50 pontos",
-    "pontuacaoPorRodada": [10, 10, 9, 8, 9, 10, 8, 10, 9, 9, 10, 9, 9, 10, 8, 10],
+    "pontuacaoPorRodada": [
+      10, 10, 9, 8, 9, 10, 8, 10, 9, 9, 10, 9, 9, 10, 8, 10
+    ],
     "equipeImages": ["src/assets/img/pilotos/vandoorne.png"]
   },
   {

@@ -15,7 +15,7 @@ export const RegrasStyle = styled.section`
 
   main {
     margin-bottom: 10vh;
-    padding:50px;
+    padding: 50px;
   }
 
   .botao-regras {
@@ -62,7 +62,7 @@ export const RegrasStyle = styled.section`
     line-height: 1.6;
     font-size: 2rem;
     padding-bottom: 3vh;
-    font-weight:300;
+    font-weight: 300;
   }
 
   .rules-list {
@@ -134,6 +134,6 @@ export const RegrasStyle = styled.section`
   }
 
   .rule-item:hover {
-    background-color: #1D1D1D;
+    background-color: #1d1d1d;
   }
 `;

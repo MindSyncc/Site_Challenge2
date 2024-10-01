@@ -246,7 +246,7 @@ const Jogo = () => {
       alert("Por favor, selecione 10 pilotos.");
       return;
     }
-  
+
     if (!selectedEquipe) {
       alert("Por favor, selecione uma equipe.");
       return;

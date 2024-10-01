@@ -25,33 +25,30 @@ export const HomeStyle = styled.section`
     justify-content: center;
   }
 
+  .banner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+  }
 
-
-.banner-box {
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1; 
-  border-radius: 10px; 
-}
-
-#banner-texto {
-  position: relative;
-  z-index: 2;
-  color: white; 
-  padding: 20px; 
-  font-size: 2.5rem;
-  text-align: center;
-  max-width: 800px;
-  margin-top: 50px;
-  text-shadow: -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
-  line-height: 4rem;
-  
-}
-
+  #banner-texto {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin-top: 50px;
+    text-shadow: -2px -1px 0 #000, 1px 1px 0 #000, -1px 1px 0 #000,
+      1px -1px 0 #000;
+    line-height: 4rem;
+  }
 
   .section-apresentacao {
     padding: 80px 100px;
@@ -1028,9 +1025,9 @@ export const HomeStyle = styled.section`
     .container-botao-noticias {
       text-align: center;
     }
-    .container-botao-noticias a{
-      margin:0;
-      padding:20px;
+    .container-botao-noticias a {
+      margin: 0;
+      padding: 20px;
       text-align: center;
     }
   }

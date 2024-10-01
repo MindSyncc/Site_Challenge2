@@ -11,7 +11,6 @@ import Equipes from "./routes/Equipes.jsx";
 import Regras from "./routes/Regras.jsx";
 import Noticias from "./routes/Noticias.jsx";
 import Jogo from "./routes/Jogo.jsx";
-import Usuario from "./routes/Usuario.jsx";
 import RegrasFormulaE from "./routes/RegrasFormulaE.jsx";
 import RegrasEmasters from "./routes/RegrasEmasters.jsx";
 
@@ -35,11 +34,8 @@ const router = createBrowserRouter([
       { path: "/regras", element: <Regras /> },
       { path: "/notícias", element: <Noticias /> },
       { path: "/jogo", element: <Jogo /> },
-      { path: "/usuario", element: <Usuario /> },
       { path: "/regras-formula-e", element: <RegrasFormulaE /> },
       { path: "/regras-emasters", element: <RegrasEmasters /> },
-
-      { path: "/editarUsuario/:id", element: <Usuario /> },
     ],
   },
 ]);
