@@ -24,15 +24,18 @@ E-Masters é um jogo interativo onde os jogadores escolhem pilotos e equipes da 
 
 ```bash
 git clone https://github.com/MindSyncc/Site_Challenge2.git
+```
 
 2. Navegue até o diretório do projeto:
 
 ```bash
 cd Site_Challenge2
+```
 
 3. Instale as dependências:
 ```bash
 npm install
+```
 
 4. Inicie o servidor de desenvolvimento:
 ```bash
@@ -98,14 +101,18 @@ O aplicativo estará disponível em http://localhost:3000 no seu navegador.
 
 - **Ultrapassagens**: Cada ultrapassagem realizada dá 0,5 pontos, e cada ultrapassagem sofrida tira 0,2 pontos.
 
+### Link do repositório do projeto
+
+**https://github.com/MindSyncc/Site_Challenge2​**
+
 ### Integrantes do projeto
 
-Fernando Carlos Colque Huaranca​ 
+**Fernando Carlos Colque Huaranca​**
 ​
-Heloísa Fleury Jardim 
+**Heloísa Fleury Jardim**
 ​
-Juan Fuentes Rufino 
+**Juan Fuentes Rufino**
 
-Julia Carolina Ferreira Silva
+**Julia Carolina Ferreira Silva**
 
-Pedro Henrique Silva Batista
+**Pedro Henrique Silva Batista**
