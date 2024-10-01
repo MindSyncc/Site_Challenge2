@@ -107,12 +107,12 @@ O aplicativo estará disponível em http://localhost:3000 no seu navegador.
 
 ### Integrantes do projeto
 
-**Fernando Carlos Colque Huaranca​**
+**Fernando Carlos Colque Huaranca​**  
 ​
-**Heloísa Fleury Jardim**
+**Heloísa Fleury Jardim**  
 ​
-**Juan Fuentes Rufino**
+**Juan Fuentes Rufino**  
 
-**Julia Carolina Ferreira Silva**
+**Julia Carolina Ferreira Silva**  
 
-**Pedro Henrique Silva Batista**
+**Pedro Henrique Silva Batista**  
