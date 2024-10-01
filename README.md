@@ -17,26 +17,27 @@ E-Masters é um jogo interativo onde os jogadores escolhem pilotos e equipes da 
 
 ### Pré-requisitos
 - **Node.js**: Certifique-se de ter o Node.js instalado. [Instalar Node.js](https://nodejs.org/)
-- **npm** ou **yarn**: Gerenciador de pacotes.
+- **npm**: Gerenciador de pacotes.
 
 ### Instruções
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seuusuario/e-masters-formula-e-game.git
+git clone https://github.com/MindSyncc/Site_Challenge2.git
 
 2. Navegue até o diretório do projeto:
-cd e-masters-formula-e-game
+
+```bash
+cd Site_Challenge2
 
 3. Instale as dependências:
+```bash
 npm install
-# ou, se estiver usando yarn
-yarn install
 
 4. Inicie o servidor de desenvolvimento:
-npm start
-# ou com yarn
-yarn start
+```bash
+npm run dev
+```
 
 O aplicativo estará disponível em http://localhost:3000 no seu navegador.
 
@@ -51,11 +52,6 @@ O aplicativo estará disponível em http://localhost:3000 no seu navegador.
    - **Penalidades por desqualificação**
 4. Acumule pontos e veja seus resultados após cada corrida.
 
-## Estrutura do Projeto
-
-- **`src/components/RegrasFormulaE.js`**: Componente principal que exibe as regras do jogo, simula corridas e calcula a pontuação com base nas escolhas dos jogadores.
-- **`src/assets/img/`**: Contém as imagens usadas no site, como ícones de setas e imagens relacionadas à Fórmula E.
-- **`src/css/RegrasStyle.js`**: Estilos específicos para o componente de regras.
 
 ## Regras do Jogo
 
