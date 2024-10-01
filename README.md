@@ -112,7 +112,5 @@ O aplicativo estará disponível em http://localhost:3000 no seu navegador.
 **Heloísa Fleury Jardim**  
 ​
 **Juan Fuentes Rufino**  
-
 **Julia Carolina Ferreira Silva**  
-
 **Pedro Henrique Silva Batista**  
