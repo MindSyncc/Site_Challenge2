@@ -576,8 +576,8 @@ const Jogo = () => {
             <p className="choice">Escolha uma equipe</p>
             <div className="section-car">
               {equipes.map((equipe) => (
-                <button
-                  className="card-button-car"
+                <div
+                  className="card-car"
                   key={equipe.id}
                   onClick={() => handleEquipeSelect(equipe)}
                   style={{
@@ -585,9 +585,9 @@ const Jogo = () => {
                       selectedEquipe === equipe ? "#FFD700" : "white",
                   }}
                 >
-                  <img src={equipe.imagem} alt={equipe.nome} />
-                  {equipe.nome}
-                </button>
+                  <img src={equipe.imagem} alt={equipe.nome}/>
+                  <p>{equipe.nome}</p>
+                </div>
               ))}
             </div>
           </div>
